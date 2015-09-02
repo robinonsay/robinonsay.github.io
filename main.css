@@ -1,5 +1,5 @@
 body{
-    background-color: #FFF9C4;   
+    background-color: #FFF;   
 }
 .nav a{
     color: #5a5a5a;
@@ -10,45 +10,36 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 .jumbotron{
-    font-family: 'Quicksand',sans-serif;
-    box-shadow: 5px 5px 5px grey;
+    background-color: #FFEA00;
+    font-family: 'Quicksand',sans-serif;    
     text-align: center;
-    padding: 50px;
+    padding: 100px;
+    margin-bottom: 0px;
 }
 .jumbotron h1{
     font-weight: bold;
 }
 
-.about .container{    
-    box-shadow: 5px 5px 5px grey;
-    background-color: #E8F5E9;
-    padding-bottom:50px;
-    padding-top: 50px;
+.about{    
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #69F0AE;
+    padding: 75px;
     text-align: center;
 }
 .about p{    
     font-size: 24px;
-    font-family: 'Quicksand',sans-serif;
-    
+    font-family: 'Quicksand',sans-serif;    
 }
+
 .projects{
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.projects .container{
-    
-    box-shadow: 5px 5px 5px grey;
-    background-color: #FAFAFA;
+    background-color: #18FFFF;
 }
 .current-projects{    
-    font-family: 'Droid Sans', sans-serif;
-    
-    
+    font-family: 'Droid Sans', sans-serif;    
 }
 .current-projects h2{
     font-weight: bold;
-    
-    
 }
 .link-logo{
     display: block;
