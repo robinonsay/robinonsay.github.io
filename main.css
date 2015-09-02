@@ -37,12 +37,10 @@ body{
 
 .projects{
     padding: 50px;
-    background-color: #00E5FF;
+    background-color: #1DE9B6;
+    font-family: 'Droid Sans', sans-serif;
 }
-.current-projects{    
-    font-family: 'Droid Sans', sans-serif;    
-}
-.current-projects h2{
+.projects h2{
     font-weight: bold;
 }
 .link-logo{
