@@ -30,15 +30,23 @@ body{
     padding: 75px;
     text-align: center;
 }
-.about p{    
+.abouts{    
     font-size: 24px;
     font-family: 'Quicksand',sans-serif;    
+}
+.school{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #FF9100;
+    padding: 75px;
+    text-align: center;    
 }
 
 .projects{
     padding: 50px;
     background-color: #1DE9B6;
     font-family: 'Droid Sans', sans-serif;
+    
 }
 .projects h2{
     font-weight: bold;
