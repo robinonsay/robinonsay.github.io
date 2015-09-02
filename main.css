@@ -33,6 +33,7 @@ body{
 }
 .projects{
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 .projects .container{
     
@@ -49,11 +50,18 @@ body{
     
     
 }
-
-.featured-projects{    
-    
-    
+.link-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
 }
+.featured-projects .link-logo{
+    box-shadow: 3px 2px 5px grey;
+}
+ .current-projects .link-logo{
+    position: relative;
+     bottom: 50px;
+ }
 .nav li{
     display: inline;
 }
