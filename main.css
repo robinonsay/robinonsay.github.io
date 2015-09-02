@@ -1,3 +1,6 @@
+body{
+    background-color: #FFF9C4;   
+}
 .nav a{
     color: #5a5a5a;
     font-size: 11px;
@@ -9,43 +12,47 @@
 .jumbotron{
     font-family: 'Quicksand',sans-serif;
     box-shadow: 5px 5px 5px grey;
+    text-align: center;
+    padding: 50px;
 }
 .jumbotron h1{
     font-weight: bold;
 }
-.about{    
+
+.about .container{    
     box-shadow: 5px 5px 5px grey;
-    background-color: #FFCDD2;
+    background-color: #E8F5E9;
     padding-bottom:50px;
-    padding-top: 50px;    
+    padding-top: 50px;
+    text-align: center;
 }
 .about p{    
     font-size: 24px;
     font-family: 'Quicksand',sans-serif;
     
 }
-.current-projects{
+.projects{
+    margin-top: 25px;
+}
+.projects .container{
     
-    background-image: url("NewSnap.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
-    font-family: 'Droid Sans', sans-serif;
     box-shadow: 5px 5px 5px grey;
-    text-align: center;
+    background-color: #FAFAFA;
+}
+.current-projects{    
+    font-family: 'Droid Sans', sans-serif;
+    
+    
 }
 .current-projects h2{
     font-weight: bold;
-    align-self: center;
+    
     
 }
 
-.featured-projects{
-    background-image: url("gallery.jpg");
-    background-repeat: no-repeat;
-    box-shadow: 5px 5px 5px grey;
-    background-size: cover;
-    height: 400px;
+.featured-projects{    
+    
+    
 }
 .nav li{
     display: inline;
