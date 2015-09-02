@@ -25,7 +25,27 @@
     
 }
 .current-projects{
-    background-image: url("ic_launcher.png");   
+    
+    background-image: url("NewSnap.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    font-family: 'Droid Sans', sans-serif;
+    box-shadow: 5px 5px 5px grey;
+    text-align: center;
+}
+.current-projects h2{
+    font-weight: bold;
+    align-self: center;
+    
+}
+
+.featured-projects{
+    background-image: url("gallery.jpg");
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 5px grey;
+    background-size: cover;
+    height: 400px;
 }
 .nav li{
     display: inline;
