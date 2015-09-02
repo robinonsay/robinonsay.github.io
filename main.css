@@ -3,11 +3,14 @@ body{
 }
 .nav a{
     color: #5a5a5a;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
     padding: 14px 10px;
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
+}
+.nav li{
+    display: inline;
 }
 .jumbotron{
     background-color: #FFEA00;
@@ -23,7 +26,7 @@ body{
 .about{    
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: #69F0AE;
+    background-color: #FFF;
     padding: 75px;
     text-align: center;
 }
@@ -33,7 +36,8 @@ body{
 }
 
 .projects{
-    background-color: #18FFFF;
+    padding: 50px;
+    background-color: #00E5FF;
 }
 .current-projects{    
     font-family: 'Droid Sans', sans-serif;    
@@ -53,7 +57,4 @@ body{
     position: relative;
      bottom: 50px;
  }
-.nav li{
-    display: inline;
-}
 
