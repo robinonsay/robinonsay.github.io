@@ -1,5 +1,6 @@
 body{
-    background-color: #FFF;   
+    background-color: #FFF;
+    position: relative;
 }
 .nav{
     padding-top: 5px;
@@ -48,7 +49,7 @@ body{
 
 .projects{
     padding: 50px;
-    background-color: #1DE9B6;
+    background-color: #FFF;
     font-family: 'Droid Sans', sans-serif;
     
 }
