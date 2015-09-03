@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head>        
         <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Quicksand|Montserrat' rel='stylesheet' type='text/css'>
         <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
-        <link href="main.css" rel="stylesheet">
-        
+        <link href="main.css" rel="stylesheet">        
     </head>
     <body>
         
         <header>
-            <div class="nav">
+            <section class="nav navbar-fixed-top">
                 <div class="container-fluid">
                     <ul class="pull-right">
                         <li>
@@ -22,33 +21,48 @@
                             <a href="mailto:raomax@gmail.com"><span class="glyphicon glyphicon-envelope"></span></a>
                         </li>
                     </ul>
+                    <ul class="pull-left">
+                        <li>
+                            <a href="#jumbo">Top</a>
+                        </li>
+                        <li>
+                            <a href="#school">Education</a>
+                        </li>
+                        <li>
+                            <a href="#about">Expierence</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </section>
         </header>
         
         
-        <div class="jumbotron">
+        <section id="jumbo" class="jumbotron">
             <div class="container-fluid">
                 <!--img src="logo.png" height="300px" width="300px"-->
                 <h1>I'm Robin Onsay</h1>
                 <p>Developer and Computer Science Enthusiast</p>
                 <a class="bio" href="">Biography</a>
             </div>
-        </div>
-        <div class="about">
+        </section>        
+        <section id="school" class="school">
+            <div class="container-fluid">
+                <p class="abouts">
+                    I'm in my senior-year of High School at Rochester Adams<br>
+                    and I am also currenty taking classes at <a href="http://www.oakland.edu/">Oakland University</a>
+                </p>
+                
+            </div>
+        </section>
+        <section id="about" class="about">
             <div class="container-fluid">
                 <p class="abouts">I am proficient in Java, C++, C, Python, HTML, CSS, Bash, MySQL</p>
             </div>
-        </div>
-        <div class="school">
-            <div class="container-fluid">
-                <p class="abouts">
-                    I'm currently a student at Oakland University, and wrapping up my senior year of High School
-                    at Rochester Adams.
-                </p>
-            </div>
-        </div>
-        <div class="projects">
+        </section>
+        <section id="projects" class="projects">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-6">
@@ -77,6 +91,6 @@
                     </div>
                 </div>                
             </div>
-        </div>
+        </section>       
     </body>
 </html>
