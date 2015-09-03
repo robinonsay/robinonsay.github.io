@@ -1,15 +1,13 @@
-.nav{
-    padding-top: 5px;
-    background-color: #651FFF;   
+.bio{
+    padding: 50px;
+    font-size: 24px;
+    font-family: 'Quicksand',sans-serif;   
 }
-.nav a{
-    color: #F5F5F5;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 14px 10px;
-    text-transform: uppercase;
-    font-family: 'Quicksand', sans-serif;
-}
-.nav li{
-    display: inline;
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
 }

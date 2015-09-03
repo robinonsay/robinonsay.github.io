@@ -1,3 +1,6 @@
+html,body{
+    height: 100%;   
+}
 body{
     background-color: #FFF;
     position: relative;
@@ -109,9 +112,8 @@ body{
 footer{
     background-color: #FFEA00;
     padding: 50px;
-    text-align: center;
 }
 footer p{
-    font-size: 24px;
+    font-size: 12px;
     font-family: 'Quicksand',sans-serif;
 }
