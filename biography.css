@@ -1,0 +1,15 @@
+.nav{
+    padding-top: 5px;
+    background-color: #651FFF;   
+}
+.nav a{
+    color: #F5F5F5;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+}
+.nav li{
+    display: inline;
+}
