@@ -106,3 +106,12 @@ body{
 	line-height: inherit;
 }
 
+footer{
+    background-color: #FFEA00;
+    padding: 50px;
+    text-align: center;
+}
+footer p{
+    font-size: 24px;
+    font-family: 'Quicksand',sans-serif;
+}
