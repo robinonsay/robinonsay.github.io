@@ -28,7 +28,7 @@ body{
     background-color: #FFEA00;
     font-family: 'Quicksand',sans-serif;    
     text-align: center;
-    padding: 100px;
+    padding: 75px;
     margin-bottom: 0px;
 }
 .jumbotron h1{
@@ -115,7 +115,12 @@ body{
 
 footer{
     background-color: #FFEA00;
-    padding: 50px;
+    padding: 25px;
+}
+footer a{
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
 }
 footer p{
     font-size: 12px;
