@@ -6,6 +6,7 @@
         <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
         <link href="main.css" rel="stylesheet">
         <link href="biography.css" rel="stylesheet">
+        
     </head>
     <body>
         <div id="wrap">
@@ -44,16 +45,25 @@
                 </div>
             </section>
 
-            <section class="bio">
+            <section class="section bio">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <p class="text-center">I was born and raised in Michigan. I currently go to Rochester Adams High School and I'm also a student at Oakland University-- very few students from my high school are given the opportunity to take college classes. I am very enthusiastic about engineering, and more specifically electrical and computer engineering. I joined my high school robotics team my freshman year, and from there I knew I wanted to be an engineer. There’s a famous quote, “Do what you like, and like what you do”. To me, this means finding an occupation where you ask the question, “Am I really getting paid for this?”
-</p>
-                        </div>
-                    </div>
+                    <p class="text-center">I was born and raised in Michigan</p>
+                    <a href="#bio-engineering" class="text-center smoothScroll"><span class="glyphicon glyphicon-menu-down"></span></a>
                 </div>
             </section>
+            <section id="bio-engineering" class="section bio-engineering">
+                <div class="container-fluid">
+                    <p class="abouts">I am very enthusiastic about engineering</p>
+                    <a href="#quote" class="text-center smoothScroll"><span class="glyphicon glyphicon-menu-down"></span></a>
+                </div>
+            </section>
+            <section id="quote" class="section quote">
+                <div class="container-fluid">
+                    <p class="abouts">My favorite quote is "Do what you like and like what you do"</p>
+                    <a href="#bio-engineering" class="text-center smoothScroll"><span class="glyphicon glyphicon-menu-down"></span></a>
+                </div>
+            </section>
+            
         </div><!--wrap div end here-->
         <footer class="footer">
             <div class="container-fluid">
@@ -64,6 +74,7 @@
                 </div>
             </div>
         </footer>
-        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="smoothscroll.js"></script>
     </body>
 </html>
