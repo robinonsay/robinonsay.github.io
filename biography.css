@@ -1,7 +1,4 @@
-.bio{
-    
-    
-}
+
 #wrap {
   min-height: 100%;
   height: auto;
@@ -17,10 +14,16 @@
     font-size: 24px;
     font-family: 'Quicksand',sans-serif;   
 }
-
+.music{
+    background-color: #FF9100;   
+}
 .bio-engineering{
     background-color: #FF9100;   
 }
 .section a{
-    
+    color: #424242;
+    padding: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 100px;
 }
