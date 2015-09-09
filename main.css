@@ -6,24 +6,25 @@ body{
     position: relative;
 }
 .nav{
-    padding-top: 5px;
+    padding: 5px;
     background-color: #651FFF;   
 }
 
 .nav a{
+    display: block;
     background-color:#1DE9B6;
     color: #651FFF;
     font-size: 12px;
     font-weight: bolder;
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
-    padding: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 100px;
 }
-.nav li{
-    display: inline;
-}
+
 .jumbotron{
     background-color: #FFEA00;
     font-family: 'Quicksand',sans-serif;    
