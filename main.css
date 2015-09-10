@@ -7,13 +7,13 @@ body{
 }
 .nav{
     padding: 5px;
-    background-color: #651FFF;   
+    background-color: #3008B2;   
 }
 
 .nav a{
     display: block;
-    background-color:#1DE9B6;
-    color: #651FFF;
+    background-color:#6C3EFF;
+    color: #FFF;
     font-size: 12px;
     font-weight: bolder;
     text-transform: uppercase;
@@ -26,7 +26,7 @@ body{
 }
 
 .jumbotron{
-    background-color: #FFEA00;
+    background-color: #FFED3E;
     font-family: 'Quicksand',sans-serif;    
     text-align: center;
     padding: 75px;
@@ -39,7 +39,7 @@ body{
 .about{    
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: #FF9100;
+    background-color: #FFED3E;
     padding: 75px;
     text-align: center;
 }
@@ -115,7 +115,7 @@ body{
 }
 
 footer{
-    background-color: #FFEA00;
+    background-color: #FFED3E;
     padding: 25px;
 }
 footer a{
