@@ -36,32 +36,25 @@ body{
     font-weight: bold;
 }
 
-.about{    
+.section-yellow{    
     margin-top: 0px;
     margin-bottom: 0px;
     background-color: #FFED3E;
     padding: 75px;
     text-align: center;
-}
-.abouts{    
     font-size: 24px;
-    font-family: 'Quicksand',sans-serif;    
+    font-family: 'Quicksand',sans-serif;   
 }
-.school{
+.section-white{    
     margin-top: 0px;
     margin-bottom: 0px;
     background-color: #FFF;
     padding: 75px;
-    text-align: center;    
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Quicksand',sans-serif;   
 }
-
-.projects{
-    padding: 50px;
-    background-color: #FFF;
-    font-family: 'Droid Sans', sans-serif;
-    
-}
-.projects h2{
+#projects h2{
     font-weight: bold;
 }
 .link-logo{
@@ -69,10 +62,10 @@ body{
     margin-left: auto;
     margin-right: auto;    
 }
-.featured-projects .link-logo{
+#featured-projects .link-logo{
     box-shadow: 3px 2px 5px grey;
 }
- .current-projects .link-logo{
+ #current-projects .link-logo{
     position: relative;
      bottom: 50px;
  }

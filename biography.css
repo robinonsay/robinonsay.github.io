@@ -7,19 +7,6 @@
   /* Pad bottom by footer height */
   padding: 0 0 60px;
 }
-.section{
-    display: block;
-    text-align: center;
-    padding: 75px;
-    font-size: 24px;
-    font-family: 'Quicksand',sans-serif;   
-}
-.music{
-    background-color: #FFED3E;   
-}
-.bio-engineering{
-    background-color: #FFED3E;   
-}
 .section a{
     color: #424242;
     padding: 5px;
