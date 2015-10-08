@@ -4,41 +4,36 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Quicksand|Montserrat' rel='stylesheet' type='text/css'>
         <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
-        <link href="main.css" rel="stylesheet">
-        <link href="biography.css" rel="stylesheet">
+        <!--link href="main.css" rel="stylesheet"-->
+        <!--link href="biography.css" rel="stylesheet"-->
         
     </head>
     <body>
-        <div id="wrap">
-            <title>Biography</title>
-            <nav class="nav navbar-fixed-top">
-                <div class="container-fluid">
-                    <div class="row">
-                    <div class="col-xs-1">
-                        <a href="index.html" class="smoothScroll"><span class="glyphicon glyphicon-home"></span></a>
-                    </div>                    
-                    <div class="col-xs-1">
-                        <a href="biography.html">Bio</a>
-                    </div>
-                    <div class="col-xs-1">
-                        <a href="index.html#school" class="smoothScroll">Education</a>
-                    </div>
-                    <div class="col-xs-1">
-                        <a href="index.html#about" class="smoothScroll">Expierence</a>
-                    </div>
-                    <div class="col-xs-1">
-                        <a href="index.html#projects" class="smoothScroll">Projects</a>
-                    </div>
-                    <div class="col-xs-1 pull-right">
-                        <a id="mail" href="mailto:raomax@gmail.com"><span class="glyphicon glyphicon-envelope"/></a>
-                    </div>
-                    <div class="col-xs-1 pull-right">
-                        <a href="https://docs.google.com/document/d/1r9730ZEUnaYiSD1qEB5_ZnRYgUlfitKfcOJLN5SkLiQ/pub">Resume</a>
-                    </div>
-                </div>               
-                </div>
-            </nav>
+        <nav class="navbar navbar-inverse text-center">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" class="smoothScroll"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <li><a href="#school" class="smoothScroll">Education</a></li>
+                    <li><a href="#about" class="smoothScroll">Expierence</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+                        <ul class ="dropdown-menu">
+                            <li><a href="current-projects.html">Current Projects</a></li>
+                            <li><a href="https://www.codecademy.com/">codecademy.com</a></li>
+                            <li><a href="http://stackoverflow.com/">stackoverflow</a></li>
+                            <li><a href="https://github.com/robinonsay"> My GitHub</a></li>
+                            <li><a href="mailto:robinonsay@oakland.edu">Contact Me</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="mail" href="mailto:raomax@gmail.com"><span class="glyphicon glyphicon-envelope"/></a></li>
+                    <li><a href="https://docs.google.com/document/d/1r9730ZEUnaYiSD1qEB5_ZnRYgUlfitKfcOJLN5SkLiQ/pub">Resume</a></li>
+                </ul>
+            </div>
 
+        </nav>
+        <div id="wrap">
+            
+            
             <section id = "jumbo"class="jumbotron">
                 <div class="conatiner-fluid">
                     <img class="link-logo" src="ic_launcher.png" height="30%" width="30%" alt="logo">  

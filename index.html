@@ -1,114 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Robin Onsay</title>
-        <meta name="author" content="Robin Onsay">
-        <meta name="description" content="The personal website of Robin Onsay">
-        <meta name="keywords" content="robin onsay, onsay, robin, Robin onsay, robin Onsay, Robin, Robin Alper Onsay">
-        <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Quicksand|Montserrat' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+                <!-- Latest compiled and minified CSS -->
         
-        <link href="main.css" rel="stylesheet">        
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+
+        <link href="main-bootstrap.css" rel="stylesheet" type="text/css">
+        <style>
+            section article img{
+                width: 100%;
+                height: 100%;
+            }
+        </style>
     </head>
     <body>
-        
-        
-        <nav class="nav navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-1">
-                        <a href="index.html" class="smoothScroll"><span class="glyphicon glyphicon-home"></span></a>
-                    </div>                    
-                    <div class="col-xs-1">
-                        <a href="biography.html">Bio</a>
-                    </div>
-                    <div class="col-xs-1">
-                        <a href="#school" class="smoothScroll">Education</a>
-                    </div>
-                    <div class="col-xs-1">
-                        <a href="#about" class="smoothScroll">Expierence</a>
-                    </div>
-                    <div class="col-xs-1">
-                        <a href="#projects" class="smoothScroll">Projects</a>
-                    </div>
-                    <div class="col-xs-1 pull-right">
-                        <a id="mail" href="mailto:raomax@gmail.com"><span class="glyphicon glyphicon-envelope"/></a>
-                    </div>
-                    <div class="col-xs-1 pull-right">
-                        <a href="https://docs.google.com/document/d/1r9730ZEUnaYiSD1qEB5_ZnRYgUlfitKfcOJLN5SkLiQ/pub">Resume</a>
-                    </div>
-                </div>
+
+        <header class="container-fluid">
+            <div class="jumbotron text-center">
+                <img  id="myPicture" class="img-circle" src="RobinOnsay.jpg" alt="robin onsay's picture">
+                <h1>Robin Onsay</h1>
+                <p>Developer And Computer Science Enthusiast</p>
+                <a href="#about-academics"><span class="#"></span></a>
             </div>
+        </header>
+        
+        <!--data-spy="affix" data-offset-top="-->
+        <nav class="navbar navbar-default text-center">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="projects-bootstrap.html">Projects</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Links<span class="caret"></span></a>
+                        <ul class ="dropdown-menu">
+                            <li><a href="https://www.objc.io/">objc.io</a></li>
+                            <li><a href="https://www.codecademy.com/">codecademy.com</a></li>
+                            <li><a href="http://stackoverflow.com/">stackoverflow</a></li>
+                            <li class="divider"></li>
+                            <li><a href="https://github.com/robinonsay"> My GitHub</a></li>
+                            <li><a href="mailto:robinonsay@oakland.edu">Contact Me</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
         </nav>
+        <main class="container-fluid" role="main">
+            <header class="row">
+                <div class="col-md-12 text-center">
+                    <h2>About</h2>
+                </div>
 
-        
-        
-        <section id="jumbo" class="jumbotron">
-            <div class="container-fluid">
-                <!--img src="logo.png" height="300px" width="300px"-->
-                <h1>I'm Robin Onsay</h1>
-                <p>Developer and Computer Science Enthusiast</p>
-            </div>
-        </section>        
-        <section id="school" class="section-white">
-            <div class="container-fluid">
-                <p class="abouts">
-                    I'm in my senior-year of High School at Rochester Adams<br>
-                    and I am also currenty taking classes at <a href="http://www.oakland.edu/">Oakland University</a>
-                </p>
-                
-            </div>
-        </section>
-        <section id="about" class="section-yellow">
-            <div class="container-fluid">
-                <p class="abouts">I am proficient in Java, C++, C, Python, HTML, CSS, Bash, MySQL</p>
-            </div>
-        </section>
-        <section id="projects" class="section-white">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <div id="current-projects">
-                            <h2 class="text-center">Current Project:</h2>                        
-                                <!--NewSnap Picture in background-->
-                            <p class="text-center">
-                                NewSnap is a way to seamlessly recieve current events, without inaccuracies or cluter. 
-                            </p>
-                            <a href="current-projects.html">                            
-                            <img class="link-logo" src="ic_launcher.png" height="60%" width="60%" alt="logo">                            
-                            </a>
-                        </div>
+            </header>
 
-                    </div>                        
-                    <div class="col-xs-6">
-                        <div id="featured-projects">
-                            <h2 class="text-center">Featured Projects:</h2>
-                            <p class="text-center">
-                                Medinar Lightens the load on Nurses. Find out how.
-                            </p>
-                            <a href="http://devpost.com/software/medinar">                            
-                            <img class="link-logo" src="gallery.jpg" height="50%" width="50%" alt="logo">                            
-                            </a>
-                        </div>
-                    </div>
-                </div>                
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="container-fluid">                
-                             
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p class="text-center">Being Created by Robin Onsay (We're under construction) <i class="fa fa-hand-lizard-o"></i></p>
-                        
-                    </div>
-                           
+            <section class="about row" id="about-academics">
+                <!--Desription of me-->
+
+                <article class="col-md-4">
+
+                    <p>Robin Onsay is currently a dual-enrolled High School student from Rochester Adams High School and <a href="http://www.oakland.edu/">Oakland University</a>. He is in the top of his class, and his determination and creativity is unique compared others from his school. He is one of the only students from his High School  who has been to <a href="https://mlh.io/">hackathons</a>. At these events Robin not only learned a great deal in the area of app development, but he has also won a few prizes for his work at the MSU Hackathon SpartaHack.</p>
+                    <img class="img-responsive" src="SpartaHack%20(1).png" alt="Spartahack Picture">
+                    <footer><a href="#about-volunteer"><i class="fa fa-chevron-down"></i></a></footer>
+                </article>
+
+
+                <!--Desription of me-->
+                <article class="col-md-4">
+
+                    <p>Robin feels it is essential to give back to the community, and has participated in numerous volunteer activities. They mostly consisted of him teaching younger students more about STEM and robotics, and encouraging younger students to partake in STEM related activities. Robin did this through mentoring rookie <a href="http://www.usfirst.org/">FIRST</a> FTC and FRC teams.</p>
+                    <img class="img-responsive" src="FRC_TEAM.png" alt="Robotics Picture"> 
+                </article>
+                <article class="col-md-4">
+                    <p>Robin is also an aficionado of guitar and piano. He’s played Guitar for almost 5 years, and piano for twice as long. Robin also enjoys a various number of other activities: Camping, fishing, hiking, basketball, ultimate frisbee, etc.</p>
+                    <img class="img-responsive" src="http://ewallpapers-hub.com/wp-content/uploads/2015/01/Acoustic-Guitar-hd-wallpapers.jpg" alt="Guitar Picture">
+                </article>
+
+
+            </section>
+
+        </main>
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Created by Robin Onsay</p>
                 </div>
             </div>
-            <a href="#jumbo" class="smoothScroll"><span class="glyphicon glyphicon-menu-up"></span></a>
         </footer>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="smoothscroll.js"></script>
+
+    <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </body>
 </html>
+    

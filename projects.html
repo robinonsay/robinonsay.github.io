@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Robin Onsay</title>
+        
+        <!--This is how I am getting the icons it does NOT affect the format-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <!--This is for the font I am using. Does not affect over all style-->
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css" type="text/css">
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <style>
+            .about img{
+                margin: 5% 0% 5% 0%;
+                width: 25%;
+                height: 25%;
+            }
+            .about{
+                border-style: none;
+            }
+            .about img{
+                margin: 2.5% 0% 2.5% 0%;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            
+            <h1>Projects</h1>
+            <a href="#school-projects"><i class="fa fa-chevron-down"></i></a>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a>
+                    </li>
+                    <li><a>Links</a>
+                        <ul>
+                            <li><a href="https://www.objc.io/">objc.io</a></li>
+                            <li><a href="https://www.codecademy.com/">codecademy.com</a></li>
+                            <li><a href="http://stackoverflow.com/">stackoverflow.com</a></li>
+                            <li><a href="https://github.com/robinonsay">My GitHub</a></li>
+                            <li><a href="mailto:robinonsay@oakland.edu">Contact Me</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main role="main">
+            
+            <!--sections will be put into cards-->
+            <section class="about" id="school-projects">
+                <!--Desription of me-->
+                <header>
+                    <h2>School Projects</h2>
+                </header>
+                <article>
+                    <header>
+                        <h2>Medinar</h2>
+                    </header>
+                    <p>Medinar is a powerful scheduling app developed with Firebase at its core. Nurses create and change schedules for elderly patients who view their schedule for the day</p>
+                    <img src="http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/233/450/datas/gallery.jpg" alt="Medinar Picture Real life">
+                    <p>Medinar was developed with user experience in mind. From day one, Medinar was designed to be easy to use for elderly patients</p>
+                    <img src="http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/233/444/datas/gallery.jpg" alt="Medinar pic ux">
+                </article>
+                
+                <article>
+                    <header>
+                        <h2>Studr</h2>
+                    </header>
+                    <p>Studr is an app that a makes it easy to find and join study groups in your area, or around your university. It also makes it easy to create your own groups and invite your friends</p>
+                    <img src="http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/288/558/datas/gallery.jpg" alt="Studr Picture">
+                    <p>I used swift to design a iOS application for front end, and Parse to design the backend. I also used some cocoa-pod frameworks</p>
+                    <img src="http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/288/557/datas/gallery.jpg" alt="Studr pic ux">
+                    <p>Studr is a large progect, and we plan on continuing working on it in the future. We plan on implementing QR code mechanics, a completely functional social system, and Google map support. We also intend on using the Uber api to give users the ability to find quick and reliable transportation</p>
+                </article>
+                
+                <footer><a href="#fun-projects"><i class="fa fa-chevron-down"></i></a></footer>
+            </section>
+            <section class="about" id="fun-projects">
+                <header>
+                    <h2>Fun Projects</h2>
+                </header>
+                <article>
+                    <header>
+                        <h2>NewSnap</h2>
+                    </header>
+                    <p>NewSnap is designed to revolutionize the way you recieve news</p>
+                    <img src="http://robinonsay.github.io/ic_launcher.png" alt="Medinar Picture Real life">
+                    <p>It will remove the clutter within news articles and current events. The news recieved is user-based, and will be moderated by users. Users will also be able to judge credibility, and the credibility of a post will be ranked. Users who accurately rate posts will be rewarded with an increased weight in voting</p>
+                    
+                </article>
+                
+                <article>
+                    <header>
+                        <h2>MySQL Project</h2>
+                    </header>
+                    <p>Using the intel edison, I installed linux debian and created a working MySQL server. I used it to experemient in my app development with making my own database, to avoid using services such as FireBase, or Parse.</p>
+                    
+                </article>
+                
+                <footer><a href="#header"><i class="fa fa-chevron-up"></i></a></footer>
+            </section>
+            
+        </main>
+        <footer>
+            <p>Created by Robin Onsay</p>
+        </footer>
+    </body>
+</html>
