@@ -16,6 +16,9 @@ section article{
     margin-top: 30px;
     
 }
+.about article a{
+    color: #FF4081; 
+}
 .about article a:visited{
     color: #AAAAAA;
 }

@@ -18,27 +18,35 @@
                 margin-top: 50px;
             }
             .slide .carousel-inner img{
-                max-height: 300px;
+                max-height: 240px;
                 width: auto;
                 margin: auto;
             }
-            
+            @media screen and (max-width: 500px) {
+                .slide .carousel-inner img{
+                max-height: 240px;
+                width: auto;
+                margin: auto;
+                }
+                
+            }
         </style>
     </head>
     <body>
-        <header class="container-fluid text-center" id="header">
-            <div class="jumbotron">
-                <h1>Projects</h1>
-                <a href="#school-projects"><i class="fa fa-chevron-down"></i></a>
+        <header class="container-fluid">
+            <div class="jumbotron text-center">
+                <img  id="myPicture" class="img-circle" src="RobinOnsay.jpg" alt="robin onsay's picture">
+                <h1>Robin Onsay</h1>
+                <p>Developer And Computer Science Enthusiast</p>
+                <a href="#about-academics"><span class="#"></span></a>
             </div>
-            
         </header>
         <!--data-spy="affix" data-offset-top="-->
         <nav class="navbar navbar-default text-center">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="projects-bootstrap.html">Projects</a>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="projects-bootstrap.html">Projects</a>
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">More<span class="caret"></span></a>
@@ -111,6 +119,7 @@
                         <h3>MySQL Project</h3>
                     </header>
                     <p>I installed linux debian on an intel edison. Then, I setup a MySQL server to experiment with relational databases</p>
+                    </br>
                     <div id="mysql-carousel" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
                       <ol class="carousel-indicators">
@@ -191,7 +200,10 @@
                     <header>
                         <h3>Medinar</h3>
                     </header>
+                    </br>
                     <p>Medinar is a powerful scheduling app developed with Firebase at its core. Nurses create and change schedules for elderly patients who view their schedule for the day</p>
+                    </br>
+                    
                     <div id="medinar-carousel" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
                       <ol class="carousel-indicators">
