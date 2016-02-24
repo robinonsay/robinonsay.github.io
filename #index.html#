@@ -18,8 +18,9 @@
   <style>
     .jumbotron {
       height: 100vh;
+      color:#FFF;
       /*background-color:transparent !important;*/
-      background-color: rgba(10,10,10,0.6);
+      background-color: rgba(10,10,10,0.5);
       margin-bottom: 0;
     }
     .jumbotron button{
@@ -30,24 +31,21 @@
       height: 100vh;
       color:#FFF;
       /*background-color:transparent !important;*/
-      background-color: rgba(0,30,30,0.6);
+      background-color: rgba(50,50,50,0.5);
     }
 
     main p{
-      color: #BBB;
+      color: #AAA
     }
 
     body {
-      color:#CCC;
+      height: 100vh;
       padding-top: 2em;
       background-image: url("/Users/robinonsay/Documents/Web_Dev/raomax.github.io/res/4k-Space-Cool-Backgrounds-Wallpapers.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
       position: relative;
-    }
-    html{
-
     }
   </style>
 </head>
@@ -111,17 +109,8 @@
         </div>
         <div class="col-md-6">
           <h3>Education</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a feugiat nunc, a eleifend turpis. Ut vestibulum augue ante. Morbi tristique lorem sit amet turpis euismod aliquet. Sed scelerisque dui dui, aliquet laoreet arcu lacinia vitae. Etiam ornare eu nulla quis tempor. Praesent quam sapien, fermentum sit amet nibh non, rutrum maximus velit. Mauris in tempus mauris, ut aliquet est. Donec laoreet orci at enim consequat, ut sagittis sem pellentesque. Nulla malesuada massa nunc, at ultricies neque fringilla sed. Phasellus cursus egestas suscipit. Cras tempus, lacus eu accumsan ultricies, lorem nibh suscipit purus, sed fermentum nunc justo id turpis.
-
-In gravida fermentum lectus sed scelerisque. Praesent purus mauris, ullamcorper sit amet dui id, ultrices dictum tellus. Phasellus pretium dictum lectus in consectetur. Ut at consequat dolor, at posuere neque. Maecenas accumsan egestas aliquam. Etiam sit amet suscipit magna. Maecenas et placerat ex. Morbi imperdiet augue posuere sodales fringilla. In hac habitasse platea dictumst.</p>
+          <p>Lorem Ipsum</p>
         </div>
-        <div class="col-md-6">
-          <h3>Accomplishments</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a feugiat nunc, a eleifend turpis. Ut vestibulum augue ante. Morbi tristique lorem sit amet turpis euismod aliquet. Sed scelerisque dui dui, aliquet laoreet arcu lacinia vitae. Etiam ornare eu nulla quis tempor. Praesent quam sapien, fermentum sit amet nibh non, rutrum maximus velit. Mauris in tempus mauris, ut aliquet est. Donec laoreet orci at enim consequat, ut sagittis sem pellentesque. Nulla malesuada massa nunc, at ultricies neque fringilla sed. Phasellus cursus egestas suscipit. Cras tempus, lacus eu accumsan ultricies, lorem nibh suscipit purus, sed fermentum nunc justo id turpis.
-
-In gravida fermentum lectus sed scelerisque. Praesent purus mauris, ullamcorper sit amet dui id, ultrices dictum tellus. Phasellus pretium dictum lectus in consectetur. Ut at consequat dolor, at posuere neque. Maecenas accumsan egestas aliquam. Etiam sit amet suscipit magna. Maecenas et placerat ex. Morbi imperdiet augue posuere sodales fringilla. In hac habitasse platea dictumst.</p>
-        </div>
-
       </div>
     </div>
   </main>
