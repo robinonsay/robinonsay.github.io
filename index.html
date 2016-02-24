@@ -11,6 +11,7 @@
 
 <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
 <!-- Style Sheets -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -27,10 +28,26 @@
     }
 
     main{
-      height: 100vh;
       color:#FFF;
       /*background-color:transparent !important;*/
+
+    }
+    main #div-about{
+      height: 105vh;
       background-color: rgba(0,30,30,0.6);
+    }
+    main #div-code-counter{
+
+      /*height: 100vh;*/
+      margin-bottom: 1em;
+      background-color: rgba(10,10,10,0.6);
+    }
+
+    #div-timers div{
+      padding: 0.1em 0.1em 0.1em 0.1em;
+      margin: 0px 0px 0px 0px;
+      border-radius: 5em;
+      background-color: #333;
     }
 
     main p{
@@ -105,7 +122,7 @@
 <!--  -->
   <main>
     <div class="container-fluid text-center">
-      <div class="row">
+      <div class="row" id="div-about">
         <div class="col-md-12">
         <h2>About</h2>
         </div>
@@ -121,8 +138,40 @@ In gravida fermentum lectus sed scelerisque. Praesent purus mauris, ullamcorper 
 
 In gravida fermentum lectus sed scelerisque. Praesent purus mauris, ullamcorper sit amet dui id, ultrices dictum tellus. Phasellus pretium dictum lectus in consectetur. Ut at consequat dolor, at posuere neque. Maecenas accumsan egestas aliquam. Etiam sit amet suscipit magna. Maecenas et placerat ex. Morbi imperdiet augue posuere sodales fringilla. In hac habitasse platea dictumst.</p>
         </div>
-
       </div>
+      <!-- Counter Section made by Josh Herkenss (http://joshherkness.com/)-->
+      <section class="counter" id="counter">
+        <div class="row" id="div-code-counter">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2>
+              Robin has been developing for
+            </h2>
+          </div>
+          <div class="col-md-offset-2" id="div-timers">
+            <div class="col-md-2 col-xs-6">
+              <h1 class="years"></h1>
+              <p class="years-lable small"></p>
+            </div>
+            <div class="col-md-2 col-xs-6">
+              <h1 class="days"></h1>
+              <p class="days-lable small"></p>
+            </div>
+            <div class="col-md-2 col-xs-6">
+              <h1 class="hours"></h1>
+              <p class="hours-lable small"></p>
+            </div>
+            <div class="col-md-2 col-xs-6">
+              <h1 class="minutes"></h1>
+              <p class="minutes-lable small"></p>
+            </div>
+            <div class="col-md-2 col-xs-6">
+              <h1 class="seconds"></h1>
+              <p class="seconds-lable small"></p>
+            </div>
+          </div>
+        </div>
+
+      </section>
     </div>
   </main>
 <!-- Latest compiled JavaScript -->
