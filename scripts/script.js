@@ -80,62 +80,76 @@ window.onload = function () {
     var startDate = new Date("September 8, 2012 12:00:00");
     setTimeout(startCounter(startDate), 1000);
 
-    /*
-     * Objects to be used as waypoints
-     * to-do: Figure out how to use an array
-     */
-    //var social = $('.social');
-    var journal = $('.journal');
-    var about = $('.about');
-    var education = $('.education');
-    var interests = $('.interests');
-    var skills = $('.skills');
-
-    /*
-     * Hide waypoints
-     */
-    //social.animate({opacity: 0}, 0);
-    journal.animate({opacity: 0}, 0);
-    about.animate({opacity: 0}, 0);
-    education.animate({opacity: 0}, 0);
-    interests.animate({opacity: 0}, 0);
-    skills.animate({opacity: 0}, 0);
-
-    /*
-     * Create waypoint functions
-     */
-    /*
-    social.waypoint(function(){
-        social.animate({opacity: 1});
-    }, {offset: '60%'});
-    */
-    journal.waypoint(function(){
-        journal.animate({opacity: 1});
-    }, {offset: '75%'});
-    about.waypoint(function(){
-        about.animate({opacity: 1});
-    }, {offset: '75%'});
-    education.waypoint(function(){
-        education.animate({opacity: 1});
-    }, {offset: '75%'});
-    interests.waypoint(function(){
-        interests.animate({opacity: 1});
-    }, {offset: '75%'});
-    skills.waypoint(function(){
-        skills.animate({opacity: 1});
-    }, {offset: '75%'});
-
 };
 
 $(document).ready(function(){
-	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
+  $('.btn-nav[href^="#"]').on('click',function (e) {
+    e.preventDefault();
 
-	    var target = this.hash;
-	    var $target = $(target);
+    var target = this.hash;
+    var $target = $(target);
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 900, 'swing');
+    $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+    }, 900, 'swing', function () {
+        window.location.hash = target;
+    });
 	});
+
+  var zwappPill = $('#a-zwapp');
+  var dataDocPill = $('#a-datadoc');
+  var studrPill = $('#a-studr');
+  var medinarPill= $('#a-medinar');
+
+  zwappPill.on('click', function(event){
+    event.preventDefault();
+
+    $('#div-datadoc').hide();
+    // dataDocPill.removeClass('.active');
+    $('#div-studr').hide();
+    // studrPill.removeClass('.active');
+    $('#div-medinar').hide();
+    // medinarPill.removeClass('.active');
+    $('#div-zwapp').show();
+    // $('#div-zwapp').attr('class', 'active');
+  });
+
+  dataDocPill.on('click', function(event){
+    event.preventDefault();
+
+    $('#div-zwapp').hide();
+    // zwappPill.removeClass('.active');
+    $('#div-studr').hide();
+    // studrPill.removeClass('.active');
+    $('#div-medinar').hide();
+    // medinarPill.removeClass('.active');
+    $('#div-datadoc').show();
+    // $('#div-datadoc').attr('class', 'active');
+  });
+
+  studrPill.on('click', function(event){
+    event.preventDefault();
+
+    $('#div-zwapp').hide();
+    // zwappPill.removeClass('.active');
+    $('#div-datadoc').hide();
+    // dataDocPill.removeClass('.active');
+    $('#div-medinar').hide();
+    // medinarPill.removeClass('.active');
+    $('#div-studr').show();
+    // $('#div-studr').attr('class', 'active');
+  });
+
+  medinarPill.on('click', function(event){
+    event.preventDefault();
+
+    $('#div-zwapp').hide();
+    // zwappPill.removeClass('.active');
+    $('#div-datadoc').hide();
+    // dataDocPill.removeClass('.active');
+    $('#div-studr').hide();
+    // studrPill.removeClass('.active');
+    $('#div-medinar').show();
+    // $('#div-medinar').attr('class', 'active');
+  });
 });

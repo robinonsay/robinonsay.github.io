@@ -21,9 +21,9 @@
       height: 100vh;
       /*background-color:transparent !important;*/
       background-color: rgba(10,10,10,0.6);
-      margin-bottom: 0;
+      margin-bottom: 0px;
     }
-    .jumbotron button{
+    #button-jumbo,#button-about{
       width: 25%;
     }
 
@@ -33,13 +33,13 @@
 
     }
     main #div-about{
-      height: 105vh;
+      height: 100vh;
       background-color: rgba(0,30,30,0.6);
     }
     main #div-code-counter{
 
       /*height: 100vh;*/
-      margin-bottom: 1em;
+      padding-bottom: 1em;
       background-color: rgba(10,10,10,0.6);
     }
 
@@ -49,7 +49,10 @@
       border-radius: 5em;
       background-color: #333;
     }
-
+    section{
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
     main p{
       color: #BBB;
     }
@@ -63,7 +66,14 @@
       background-attachment: fixed;
       position: relative;
     }
-    html{
+    #div-projects{
+      background-color: rgba(0,30,30,0.6);
+    }
+    .btn-nav{
+      background-color: rgba(0,20,20,0.6);
+      border: 2px solid rgba(40,40,40,0.6);
+    }
+    #button-sjumbo{
 
     }
   </style>
@@ -116,29 +126,29 @@
       <img src="res/RobinOnsay.jpg" alt="Robin Onsay's Logo picture" class="img-circle">
       <h1 class="display-3">Robin Onsay </br><small>Developer and Computer Science Enthusiast</small></h1>
 
-      <button type="button" id="button" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button>
+      <a href="#section-about" id="button-jumbo" class="btn btn-primary btn-nav"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
     </div>
   </div>
-<!--  -->
+<!-- Main Html -->
   <main>
     <div class="container-fluid text-center">
-      <div class="row" id="div-about">
-        <div class="col-md-12">
-        <h2>About</h2>
+      <!-- About -->
+       <section id="section-about">
+        <div class="row" id="div-about">
+          <div class="col-md-12">
+          <h2>About</h2>
+          </div>
+          <div class="col-md-6">
+            <h3>Education</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a feugiat nunc, a eleifend turpis. Ut vestibulum augue ante. Morbi tristique lorem sit amet turpis euismod aliquet. Sed scelerisque dui dui, aliquet laoreet arcu lacinia vitae. Etiam ornare eu nulla quis tempor. Praesent quam sapien, fermentum sit amet nibh non, rutrum maximus velit. Mauris in tempus mauris, ut aliquet est. Donec laoreet orci at enim consequat, ut sagittis sem pellentesque. Nulla malesuada massa nunc, at ultricies neque fringilla sed. Phasellus cursus egestas suscipit. Cras tempus, lacus eu accumsan ultricies, lorem nibh suscipit purus, sed fermentum nunc justo id turpis.</p>
+          </div>
+          <div class="col-md-6">
+            <h3>Accomplishments</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a feugiat nunc, a eleifend turpis. Ut vestibulum augue ante. Morbi tristique lorem sit amet turpis euismod aliquet. Sed scelerisque dui dui, aliquet laoreet arcu lacinia vitae. Etiam ornare eu nulla quis tempor. Praesent quam sapien, fermentum sit amet nibh non, rutrum maximus velit. Mauris in tempus mauris, ut aliquet est. Donec laoreet orci at enim consequat, ut sagittis sem pellentesque. Nulla malesuada massa nunc, at ultricies neque fringilla sed. Phasellus cursus egestas suscipit. Cras tempus, lacus eu accumsan ultricies, lorem nibh suscipit purus, sed fermentum nunc justo id turpis.</p>
+          </div>
+          <a href="#section-projects" id="button-about" class="btn btn-primary btn-nav"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
         </div>
-        <div class="col-md-6">
-          <h3>Education</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a feugiat nunc, a eleifend turpis. Ut vestibulum augue ante. Morbi tristique lorem sit amet turpis euismod aliquet. Sed scelerisque dui dui, aliquet laoreet arcu lacinia vitae. Etiam ornare eu nulla quis tempor. Praesent quam sapien, fermentum sit amet nibh non, rutrum maximus velit. Mauris in tempus mauris, ut aliquet est. Donec laoreet orci at enim consequat, ut sagittis sem pellentesque. Nulla malesuada massa nunc, at ultricies neque fringilla sed. Phasellus cursus egestas suscipit. Cras tempus, lacus eu accumsan ultricies, lorem nibh suscipit purus, sed fermentum nunc justo id turpis.
-
-In gravida fermentum lectus sed scelerisque. Praesent purus mauris, ullamcorper sit amet dui id, ultrices dictum tellus. Phasellus pretium dictum lectus in consectetur. Ut at consequat dolor, at posuere neque. Maecenas accumsan egestas aliquam. Etiam sit amet suscipit magna. Maecenas et placerat ex. Morbi imperdiet augue posuere sodales fringilla. In hac habitasse platea dictumst.</p>
-        </div>
-        <div class="col-md-6">
-          <h3>Accomplishments</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a feugiat nunc, a eleifend turpis. Ut vestibulum augue ante. Morbi tristique lorem sit amet turpis euismod aliquet. Sed scelerisque dui dui, aliquet laoreet arcu lacinia vitae. Etiam ornare eu nulla quis tempor. Praesent quam sapien, fermentum sit amet nibh non, rutrum maximus velit. Mauris in tempus mauris, ut aliquet est. Donec laoreet orci at enim consequat, ut sagittis sem pellentesque. Nulla malesuada massa nunc, at ultricies neque fringilla sed. Phasellus cursus egestas suscipit. Cras tempus, lacus eu accumsan ultricies, lorem nibh suscipit purus, sed fermentum nunc justo id turpis.
-
-In gravida fermentum lectus sed scelerisque. Praesent purus mauris, ullamcorper sit amet dui id, ultrices dictum tellus. Phasellus pretium dictum lectus in consectetur. Ut at consequat dolor, at posuere neque. Maecenas accumsan egestas aliquam. Etiam sit amet suscipit magna. Maecenas et placerat ex. Morbi imperdiet augue posuere sodales fringilla. In hac habitasse platea dictumst.</p>
-        </div>
-      </div>
+      </section>
       <!-- Counter Section made by Josh Herkenss (http://joshherkness.com/)-->
       <section class="counter" id="counter">
         <div class="row" id="div-code-counter">
@@ -171,6 +181,39 @@ In gravida fermentum lectus sed scelerisque. Praesent purus mauris, ullamcorper 
           </div>
         </div>
 
+      </section>
+      <!-- Projects -->
+      <section id="section-projects">
+        <div class="row" id="div-projects">
+          <div class="col-md-12">
+            <ul class="nav nav-tabs" id="ul-project-nav">
+              <li><a href="#" id="a-zwapp">Zwapp</a></li>
+              <li><a href="#" id="a-datadoc">DataDoc</a></li>
+              <li><a href="#" id="a-studr">Studr</a></li>
+              <li><a href="#" id="a-medinar">Medinar</a></li>
+            </ul>
+          </div>
+          <div class="col-md-12" id="div-zwapp">
+            <h3>Zwapp</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a feugiat nunc, a eleifend turpis. Ut vestibulum augue ante. Morbi tristique lorem sit amet turpis euismod aliquet. Sed scelerisque dui dui, aliquet laoreet arcu lacinia vitae. Etiam ornare eu nulla quis tempor. Praesent quam sapien, fermentum sit amet nibh non, rutrum maximus velit. Mauris in tempus mauris, ut aliquet est. Donec laoreet orci at enim consequat, ut sagittis sem pellentesque. Nulla malesuada massa nunc, at ultricies neque fringilla sed. Phasellus cursus egestas suscipit. Cras tempus, lacus eu accumsan ultricies, lorem nibh suscipit purus, sed fermentum nunc justo id turpis.</p>
+          </div>
+
+          <div class="col-md-12" id="div-datadoc" hidden>
+            <h3>DataDoc</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a feugiat nunc, a eleifend turpis. Ut vestibulum augue ante. Morbi tristique lorem sit amet turpis euismod aliquet. Sed scelerisque dui dui, aliquet laoreet arcu lacinia vitae. Etiam ornare eu nulla quis tempor. Praesent quam sapien, fermentum sit amet nibh non, rutrum maximus velit. Mauris in tempus mauris, ut aliquet est. Donec laoreet orci at enim consequat, ut sagittis sem pellentesque. Nulla malesuada massa nunc, at ultricies neque fringilla sed. Phasellus cursus egestas suscipit. Cras tempus, lacus eu accumsan ultricies, lorem nibh suscipit purus, sed fermentum nunc justo id turpis.</p>
+          </div>
+
+          <div class="col-md-12" id="div-studr" hidden>
+            <h3>Studr</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a feugiat nunc, a eleifend turpis. Ut vestibulum augue ante. Morbi tristique lorem sit amet turpis euismod aliquet. Sed scelerisque dui dui, aliquet laoreet arcu lacinia vitae. Etiam ornare eu nulla quis tempor. Praesent quam sapien, fermentum sit amet nibh non, rutrum maximus velit. Mauris in tempus mauris, ut aliquet est. Donec laoreet orci at enim consequat, ut sagittis sem pellentesque. Nulla malesuada massa nunc, at ultricies neque fringilla sed. Phasellus cursus egestas suscipit. Cras tempus, lacus eu accumsan ultricies, lorem nibh suscipit purus, sed fermentum nunc justo id turpis.</p>
+          </div>
+
+          <div class="col-md-12" id="div-medinar" hidden>
+            <h3>Medinar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a feugiat nunc, a eleifend turpis. Ut vestibulum augue ante. Morbi tristique lorem sit amet turpis euismod aliquet. Sed scelerisque dui dui, aliquet laoreet arcu lacinia vitae. Etiam ornare eu nulla quis tempor. Praesent quam sapien, fermentum sit amet nibh non, rutrum maximus velit. Mauris in tempus mauris, ut aliquet est. Donec laoreet orci at enim consequat, ut sagittis sem pellentesque. Nulla malesuada massa nunc, at ultricies neque fringilla sed. Phasellus cursus egestas suscipit. Cras tempus, lacus eu accumsan ultricies, lorem nibh suscipit purus, sed fermentum nunc justo id turpis.</p>
+          </div>
+
+        </div>
       </section>
     </div>
   </main>
