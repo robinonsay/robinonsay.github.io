@@ -90,7 +90,7 @@ $(document).ready(function(){
     var $target = $(target);
 
     $('html, body').stop().animate({
-        'scrollTop': $target.offset().top
+        'scrollTop': $target.offset().top - 50
     }, 900, 'swing', function () {
         window.location.hash = target;
     });
@@ -100,56 +100,57 @@ $(document).ready(function(){
   var dataDocPill = $('#a-datadoc');
   var studrPill = $('#a-studr');
   var medinarPill= $('#a-medinar');
+  $('#li-zwapp').attr('class', 'active');
 
   zwappPill.on('click', function(event){
     event.preventDefault();
 
     $('#div-datadoc').hide();
-    // dataDocPill.removeClass('.active');
+    $('#li-datadoc').removeClass('active');
     $('#div-studr').hide();
-    // studrPill.removeClass('.active');
+    $('#li-studr').removeClass('active');
     $('#div-medinar').hide();
-    // medinarPill.removeClass('.active');
+    $('#li-medinar').removeClass('active');
     $('#div-zwapp').show();
-    // $('#div-zwapp').attr('class', 'active');
+    $('#li-zwapp').attr('class', 'active');
   });
 
   dataDocPill.on('click', function(event){
     event.preventDefault();
 
     $('#div-zwapp').hide();
-    // zwappPill.removeClass('.active');
+    $('#li-zwapp').removeClass('active');
     $('#div-studr').hide();
-    // studrPill.removeClass('.active');
+    $('#li-studr').removeClass('active');
     $('#div-medinar').hide();
-    // medinarPill.removeClass('.active');
+    $('#li-medinar').removeClass('active');
     $('#div-datadoc').show();
-    // $('#div-datadoc').attr('class', 'active');
+    $('#li-datadoc').attr('class', 'active');
   });
 
   studrPill.on('click', function(event){
     event.preventDefault();
 
     $('#div-zwapp').hide();
-    // zwappPill.removeClass('.active');
+    $('#li-zwapp').removeClass('active');
     $('#div-datadoc').hide();
-    // dataDocPill.removeClass('.active');
+    $('#li-datadoc').removeClass('active');
     $('#div-medinar').hide();
-    // medinarPill.removeClass('.active');
+    $('#li-medinar').removeClass('active');
     $('#div-studr').show();
-    // $('#div-studr').attr('class', 'active');
+    $('#li-studr').attr('class', 'active');
   });
 
   medinarPill.on('click', function(event){
     event.preventDefault();
 
     $('#div-zwapp').hide();
-    // zwappPill.removeClass('.active');
+    $('#li-zwapp').removeClass('active');
     $('#div-datadoc').hide();
-    // dataDocPill.removeClass('.active');
+    $('#li-datadoc').removeClass('active');
     $('#div-studr').hide();
-    // studrPill.removeClass('.active');
+    $('#li-studr').removeClass('active');
     $('#div-medinar').show();
-    // $('#div-medinar').attr('class', 'active');
+    $('#li-medinar').attr('class', 'active');
   });
 });

@@ -32,12 +32,16 @@
       /*background-color:transparent !important;*/
 
     }
+    main .row{
+      overflow: scroll;
+    }
     main #div-about{
       height: 100vh;
       background-color: rgba(0,30,30,0.6);
+      position: relative;;
     }
-    main #div-code-counter{
 
+    main #div-code-counter{
       /*height: 100vh;*/
       padding-bottom: 1em;
       background-color: rgba(10,10,10,0.6);
@@ -98,13 +102,15 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
 
-          <li class="active"><a href="#">Projects<span class="sr-only">(current)</span></a></li>
+          <li><a class="btn-nav" href="#section-projects">Projects<span class="sr-only">(current)</span></a></li>
 
           <li><a href="https://www.linkedin.com/in/robinonsay"><i class="fa fa-linkedin-square"></i></a></li>
 
           <li><a href="https://github.com/robinonsay"><i class="fa fa-github"></i></a></li>
 
-          <li class="dropdown">
+          <li><a href="https://devpost.com/robinonsay">Devpost</a></li>
+
+          <!-- <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Projects</a></li>
@@ -115,7 +121,7 @@
               <li role="separator" class="divider"></li>
               <li><a href="#">One more separated link</a></li>
             </ul>
-          </li>
+          </li> -->
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -180,17 +186,16 @@
             </div>
           </div>
         </div>
-
       </section>
       <!-- Projects -->
       <section id="section-projects">
         <div class="row" id="div-projects">
           <div class="col-md-12">
             <ul class="nav nav-tabs" id="ul-project-nav">
-              <li><a href="#" id="a-zwapp">Zwapp</a></li>
-              <li><a href="#" id="a-datadoc">DataDoc</a></li>
-              <li><a href="#" id="a-studr">Studr</a></li>
-              <li><a href="#" id="a-medinar">Medinar</a></li>
+              <li id="li-zwapp"><a href="#" id="a-zwapp">Zwapp</a></li>
+              <li id="li-datadoc"><a href="#" id="a-datadoc">DataDoc</a></li>
+              <li id="li-studr"><a href="#" id="a-studr">Studr</a></li>
+              <li id="li-medinar"><a href="#" id="a-medinar">Medinar</a></li>
             </ul>
           </div>
           <div class="col-md-12" id="div-zwapp">
