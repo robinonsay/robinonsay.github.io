@@ -53,17 +53,23 @@
       background-color: rgba(10,10,10,0.6);
       margin-bottom: 0px;
     }
-    #button-jumbo,#button-about{
+    #button-jumbo, #button-about{
       width: 25%;
     }
 
-    main{
+    main, footer{
       color:#CCC;
       /*background-color:transparent !important;*/
 
     }
     main .row{
       /*overflow: scroll;*/
+    }
+    footer #div-footer{
+      min-height: 10vh;
+      background-color: rgba(30,30,30,0.6);
+      position: relative;;
+      align-items: center;
     }
     main #div-about{
       min-height: 100vh;
@@ -482,6 +488,17 @@
       </section>
     </div>
   </main>
+  <footer class="footer">
+    <div class="container-fluid text-center">
+      <section id="section-footer">
+       <div class="row" id="div-footer">
+         <div class="col-md-12">
+         <h4>Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by Robin Onsay</h4>
+         </div>
+       </div>
+     </section>
+    </div>
+  </footer>
 <!-- Latest compiled JavaScript -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
