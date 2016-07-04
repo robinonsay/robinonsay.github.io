@@ -1,0 +1,111 @@
+body {
+    color:#BBB;
+    padding-top: 2em;
+    /*background-image: url("res/4k-Space-Cool-Backgrounds-Wallpapers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    position: relative;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+/*@media (min-width: 800px) {*/
+body {
+    background-image: url("/res/4k-Space-Cool-Backgrounds-Wallpapers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+/*}*/
+/* Anything Smaller than Large  */
+/*@media (max-width: 799px) {
+body {
+background: rgba(10, 10, 10, .8);
+}
+}*/
+.col-centered{
+float: none;
+margin: 0 auto;
+}
+.jumbotron {
+min-height: 100vh;
+/*background-color:transparent !important;*/
+background-color: rgba(10,10,10,0.6);
+margin-bottom: 0px;
+}
+#button-jumbo, #button-about{
+width: 25%;
+}
+main, footer{
+color:#CCC;
+/*background-color:transparent !important;*/
+}
+main .row{
+/*overflow: scroll;*/
+}
+footer #div-footer{
+min-height: 10vh;
+background-color: rgba(30,30,30,0.6);
+position: relative;;
+align-items: center;
+}
+main #div-about{
+min-height: 100vh;
+background-color: rgba(0,30,30,0.6);
+position: relative;;
+align-items: center;
+}
+main #div-code-counter{
+/*height: 100vh;*/
+padding-bottom: 1em;
+background-color: rgba(10,10,10,0.6);
+}
+#div-timers div{
+padding: 0.1em 0.1em 0.1em 0.1em;
+margin: 0px 0px 0px 0px;
+border-radius: 5em;
+background-color: #333;
+}
+section{
+margin-top: 0px;
+margin-bottom: 0px;
+}
+main p, .a-title{
+color: #EEE;
+font-size: 1.1em;
+}
+#div-projects{
+color:#CCC;
+background-color: rgba(0,30,30,0.6);
+}
+.btn-nav-page{
+background-color: rgba(0,20,20,0.6);
+border: 2px solid rgba(40,40,40,0.6);
+margin-top: 1em;
+}
+.slide .carousel-inner img{
+border-radius: 1em;
+max-height: 240px;
+width: auto;
+margin: auto;
+}
+@media screen and (max-width: 500px) {
+.slide .carousel-inner img{
+    border-radius: 1em;
+    max-height: 200px;
+    width: auto;
+    margin: auto;
+}
+}
+.sub-col-wrapper{
+/*border-radius: 0.5em;*/
+background-color: rgba(30,10,0,0.6);
+border: 1px solid rgba(10, 10, 10, 0.4);
+min-height: 50vh;
+/*overflow: auto;*/
+}
+.sub-col-wrapper .list-group-item{
+color: #AAA;
+background-color: rgba(0,30,30,0.6);
+border: 2px solid rgba(40,40,40,0.6);
+}
