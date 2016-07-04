@@ -1,36 +1,39 @@
 <footer class="site-footer">
 
   <div class="wrapper">
+    <div class="container-fluid text-center">
+      <div class="col-md-6">
+        <h2 class="footer-heading">{{ site.title }}</h2>
+      </div>
+      <div class="col-md-6">
+        <div class="list-group">
+            {% if site.github_username %}
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+            {% include icon-github.html username=site.github_username %}
+
+            {% endif %}
+            {% if site.twitter_username %}
+
+            {% include icon-twitter.html username=site.twitter_username %}
+
+            {% endif %}
+            {% if site.linkedin_username %}
+
+            {% include icon-linkedin.html username=site.linkedin_username %}
+
+            {% endif %}
+            <a href="https://docs.google.com/document/d/1r9730ZEUnaYiSD1qEB5_ZnRYgUlfitKfcOJLN5SkLiQ/pub" target="_blank" class="list-group-item"><span class="icon icon--github">{% include icon-resume.svg %}</span> resume</a>
+            <a href="https://devpost.com/robinonsay" target="_blank" class="list-group-item"><i class="fa fa-briefcase" aria-hidden="true"></i> Devpost</a>
+        </div>
+      </div>
+    </div>
+
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>{{ site.title }}</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-
-          {% if site.linkedin_username %}
-          <li>
-            {% include icon-linkedin.html username=site.linkedin_username %}
-          </li>
-          {% endif %}
         </ul>
       </div>
 
