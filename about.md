@@ -26,7 +26,7 @@ Robin Onsay is currently a dual-enrolled High School student from Rochester Adam
                 Robin has been developing for
             </h2>
         </div>
-        <div class="col-md-offset-2" id="div-timers">
+        <div class="col-md-offset-2 text-center" id="div-timers">
             <div class="col-md-2 col-xs-6">
                 <h1 class="years"></h1>
                 <p class="years-lable small"></p>

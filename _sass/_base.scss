@@ -39,6 +39,16 @@ body {
     small {
         color: #C1C1C1;
     }
+    .btn-primary{
+        min-width: 10em;
+        border-style: none;
+        background-color: #F8B540;
+        color: #333;
+    }
+    .btn-primary:hover{
+        background-color: #8C4BB9;
+        color: #C1C1C1;
+    }
 }
 .list-group-item{
     border-radius: 0px;
