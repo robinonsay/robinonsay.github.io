@@ -14,23 +14,42 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    color:#EEE;
-    padding-top: 2em;
+    color:$text-color;
+    padding-top: 5em;
     position: relative;
-    font-family: 'Ubuntu Condensed', sans-serif;
-    background-image: url("/res/background.png");
+    font-family: $base-font-family;
+    background-image: $background-img;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
 }
-
 #main-wrapper{
     min-height: 100vh;
     // background-color: rgba(10,10,10,0.6);
     margin-bottom: 0px;
 }
+/**
+ * Bootstrap
+ */
 
+.jumbotron{
+    background-color: transparent;
+    min-height: 100vh;
+    small {
+        color: #C1C1C1;
+    }
+}
+.list-group-item{
+    border-radius: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 2px solid $divider-color;
+    background-color: $panal-bkgd-color;
+}
+.list-group-item:hover{
+    background-color: #DDD;
+}
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -160,7 +179,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-    
+
 }
 
 

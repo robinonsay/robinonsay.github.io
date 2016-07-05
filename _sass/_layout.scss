@@ -2,6 +2,11 @@
  * Site header
  */
 .site-header {
+    nav{
+        border-color: $nav-color;
+        background-color: $nav-color;
+        color: red;
+    }
 }
 
 .site-title {
@@ -16,21 +21,27 @@
 /**
  * Site footer
  */
-
-
-
-
+.site-footer{
+    border-top: 2px solid $divider-color;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: $footer-color;
+}
+.panel{
+    border-style: none;
+    .panel-heading{
+        background-color: $panal-title-bkgd-color;
+        color: $panal-title-font-color;
+    }
+    .panel-body{
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+        background-color: $panal-bkgd-color;
+    }
+    .list-group{
+        margin: 0px 0px 0px 0px;
+    }
+}
 /**
  * Page content
  */
-
-/**
- * Bootstrap
- */
-
-.jumbotron{
-    background-color: transparent;
-    small {
-        color: #C1C1C1;
-    }
-}
