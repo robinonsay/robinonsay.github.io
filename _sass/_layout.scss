@@ -1,0 +1,62 @@
+/**
+ * Site header
+ */
+.site-header {
+    nav{
+        border-color: $nav-color;
+        background-color: $nav-color;
+        color: red;
+    }
+}
+
+.site-title {
+}
+
+.site-nav {
+
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer{
+    border-top: 2px solid $divider-color;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-image: $footer-image;
+    // background-color: $footer-color;
+}
+.panel{
+    border-style: none;
+    .panel-heading{
+        background-color: $panal-title-bkgd-color;
+        color: $panal-font-color;
+    }
+    .panel-body{
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+    .list-group{
+        margin: 0px 0px 0px 0px;
+    }
+    .list-group-item{
+        color: $panal-font-color;
+        background-color: #999;
+    }
+}
+/**
+ * Page content
+ */
+#div-timers div{
+    padding: 0.1em 0.1em 0.1em 0.1em;
+    margin: 0px 0px 0px 0px;
+    border-radius: 5em;
+    background-color: #777;
+ }
+
+ .page-content{
+     margin-bottom: 2em;
+     font-size: 1.1em;
+ }
