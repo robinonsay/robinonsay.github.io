@@ -16,7 +16,16 @@
 
 }
 
-
+.blog {
+   .posts {
+        ul {
+            list-style-type: none;
+            li {
+                border-bottom: 2px solid $divider-color; 
+            }
+       }
+   } 
+}
 
 /**
  * Site footer

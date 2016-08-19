@@ -3,22 +3,27 @@ layout: default
 permalink: /blog/
 ---
 
-<div class="home">
+<div class="blog container-fluid scene_element scene_element--fadeinright">
+    <div class="row">
+        <div class="col-md-6">
+            <h1 class="">Posts</h1>
+        </div>
+	<div class="col-md-6 text-right">
+            <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-  <h1 class="page-heading">Posts</h1>
+	</div>
+        <div class="posts col-md-12">
+            <ul>
+              {% for post in site.posts %}
+                <li>
+                  <p>{{ post.date | date: "%b %-d, %Y" }}</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+                  <h2>
+                    <a  href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  </h2>
+                </li>
+              {% endfor %}
+            </ul>
+        </div>
+    </div>
 </div>
