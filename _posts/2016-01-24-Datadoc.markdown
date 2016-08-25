@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Project Datadoc"
+date:   2016-01-24 20:51:26 -0400
+categories: project hackathon
+---
+
+### Overview
+Everyday, a massive amount of digital data points are generated from countless personal medical devices, such as blood glucose monitors and insulin pumps. Majproty of this data remains uncollected. Recent advances in machine learning have made it possible to use more than just aggregate data of large patient population to improve patient care; medical care can be improved for individual patients. DataDoc makes it fun for patients to be compliant with physician instructuctions regarding the logging of health data. 
+
+<img src='{{ site.url }}/res/pennapps-diabetes-logo-jumbo.png' style='width: 20em;'/>
+
+DataDoc uses this health data to derive meaningful insights about both the individual patient’s data and across aggregate patient population’s data. A slick interface helps with the visualization of data, and allows people to develop a social network with other diabetics. This enables patients to place bets on their continued compliance in order to raise money for charity. The resulting data can be used for generating insights about: 
+
+0. When a patient needs to see a doctor
+0. How to reduce medical errors
+0. The best ways to improve research methods
+0. See how a patient’s multiple conditions interact.
+
+### Stack
+<div class='col-md-6'>
+<div class="list-group">
+<a href="http://flask.pocoo.org/" class="list-group-item" target="_blank">Python Flask</a>
+<a href="http://www.w3schools.com/" class="list-group-item" target="_blank">HTML <i class="fa fa-html5"></i></a>
+<a href="http://www.w3schools.com/" class="list-group-item" target="_blank">CSS <i class="fa fa-css3"></i></a>
+<a href="http://www.w3schools.com/" class="list-group-item" target="_blank">JavaScript <i class="fa fa-code"></i></a>
+<a href="https://www.linode.com/" class="list-group-item" target="_blank">Linode</a>
+<a href="https://www.mongodb.org/" class="list-group-item" target="_blank">MongoDB</a>
+<a href="http://www.jnj.com/" class="list-group-item" target="_blank">Johnson &amp; Johnson API </a>
+</div>
+</div>

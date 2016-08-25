@@ -3,12 +3,12 @@ layout: default
 ---
 <article class="post container-fluid scene_element scene_element--fadeinright" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header col-md-12">
+  <header class="post-header col-md-6 col-md-offset-2">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
 
-  <div class="post-content col-md-12" itemprop="articleBody">
+  <div class="post-content col-md-8 col-md-offset-2" itemprop="articleBody">
     {{ content }}
   </div>
 
