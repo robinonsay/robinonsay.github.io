@@ -8,7 +8,7 @@
 # Site settings
 title: Robin Onsay
 email: onsayrobin@gmail.com
-description: This is the portfolio website and blog for the developer Robin Onsay. Robin posts about different development technologies and offers a variety of tutorials. This paticular website was built using HTML, CSS, JavaScript, JQuery, and Jekyll. It is being hosted on github as a public repository. If you are drawing inspiration from this site I would love to hear about it!
+description: This is the portfolio website and blog for the developer Robin Onsay. This paticular website was built using HTML, CSS, JavaScript, JQuery, and Jekyll. It is being hosted on github as a public repository. If you are drawing inspiration from this site I would love to hear about it!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://robinonsay.co" # the base hostname & protocol for your site
 twitter_username: OnsayRao

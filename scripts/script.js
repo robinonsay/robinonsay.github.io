@@ -111,7 +111,7 @@ $(document).ready(function(){
     }, 900, 'swing', function () {
         window.location.hash = target;
     });
-	});
+  });
 
   var zwappPill = $('#a-zwapp');
   var dataDocPill = $('#a-datadoc');
