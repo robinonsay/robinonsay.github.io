@@ -3,6 +3,7 @@ layout: post
 title:  "Project Medinar"
 date:   2015-03-30 13:30:26 -0400
 categories: project hackathon
+icon: "res/gallery.jpg"
 ---
 ### Overview
 Our team wanted to tackle a market that was close to home, yet had the greatest positive impact in our community. It was important to us to seek a market that was profitable and worth pursuing. Thus, Medinar was founded from the idea of making life easier and simpler for the elderly, and the people who serve them.

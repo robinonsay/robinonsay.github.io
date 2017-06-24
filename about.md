@@ -3,15 +3,17 @@ layout: page
 title: About
 permalink: /about/
 ---
-I am currently a student at Michigan State University studying Computer Engineering. I will be starting my freshman year there, however, I will be admitted with a sophomore status due to all of the college credit I completed while in high school. I graduated high school in the top of my class, as a Scholar of Highest Distinction. Along with being an exemplary student, I also love mountain biking, playing piano and guitar and playing ultimate frisbee.
+I am currently a student at Michigan State University studying Computer Engineering. I am mainly interested in robotics, machine learning, and autonomous vehicles. I am aspiring to discover something new and amazing, and hoping to make a positive impact on mankind.
 
 I am a self-taught developer, with a wide variety of skills: Web, Android, iOS development, and more. I attended many hackathons, events were up to 2,000 College students go and create a solution to an everyday problem. They use devices and tools available to the public to create spectacular innovations in technology, Learn more at <a href="http://mlh.io" target="_blank">MLH</a>. Many of my projects have been geared towards improving the quality of life of other people(Check out my <a href="https://devpost.com/robinonsay" target="_blank">Devpost</a> to learn more). I use hackathons as a way to excersise my creativity, and to practice developing my ideas and solutions to real-world problems.
-I always look for a challenge, and even when it is seemingly impossible, I always manage to get the job done. As a result, I have had many success during hackathons, my development jobs, and in life.
+
+In my free time, I enjoy playing guitar and piano, along with mountain biking and camping. I always look for a challenge, and even when it is seemingly impossible, I always manage to get the job done. As a result, I have had many success during hackathons, my development jobs, and in life.
 <div class="col-md-6 text-center">
     <h3>Accomplishments</h3>
     <div class="list-group">
+        <a href="https://www.nasa.gov/centers/johnson/education/interns/index.html" class="list-group-item" target="_blank">NASA Johnson Space Center Intern <i class="fa fa-space-shuttle" aria-hidden="true"></i></a>
         <a href="http://devpost.com/software/eggsy" class="list-group-item" target="_blank">Best IoT Hack PennApps XIV <i class="fa fa-trophy"></i></a>
-        <a href="http://drivespotter.com/" class="list-group-item" target="_blank">Junior Software Developer at Drive Spotter</a>
+        <a href="http://drivespotter.com/" class="list-group-item" target="_blank">Junior Software Developer at Drive Spotter <i class="fa fa-truck" aria-hidden="true"></i></a>
         <a href="http://kpcbfellows.com/" class="list-group-item" target="_blank">KPCB Fellowship Finalist</a>
         <a href="http://devpost.com/software/datadoc" class="list-group-item" target="_blank">Health Route Prize PennApps XIII <i class="fa fa-trophy"></i></a>
         <a href="http://devpost.com/software/medinar" class="list-group-item" target="_blank">KPCB Challenge Winner <i class="fa fa-trophy"></i></a>
