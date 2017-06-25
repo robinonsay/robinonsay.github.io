@@ -6,7 +6,7 @@ categories: job oppurtunites space
 icon: "res/nasaLogo.png"
 ---
 
-![NASA Meatball]({{ site.url }}/res/nasaLogo.png)
+<img src="{{ site.url }}/res/nasaLogo.png" alt="NASA Meatball" width="50%"/>
 
 ## The Social Life
 I would equate a NASA Johnson Space Center (JSC) internship to being in a fraternity, without the hazing of course. In the short few months that I spent there, a family-like bond is fostered. I worked very closely with my fellow interns, and constantly participated in bonding activities, like SCUBA diving, retreats, and skydiving. Along with the fellowship, I engaged in countless philanthropic activities. I visited nearby college campuses to give presentations, and other interns traveled to elementary schools to inspire young students, and give back by doing community service projects. Of course, with any fraternity there is rush. NASA interns, as a whole, promote the greatness of the internship through social media, and try to inspire others to apply to the program as relentlessly as a fraternity. While JSC’s intern social life is much like a frat, we always put work first. There are numerous times where I chose to work late, and get ahead on my project, not because I had to, but because I have a passion for what I do.
