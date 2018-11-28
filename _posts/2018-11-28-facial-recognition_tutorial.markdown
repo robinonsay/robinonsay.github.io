@@ -395,9 +395,10 @@ $$D= \frac{\sum box}{\sum mask}$$
 for h in range(0, img_h - mask_h, mask_h // res):
     for w in range(0, img_w - mask_w, mask_w // res):
         box = img_post_ifft[h:h+mask_h, w:w+mask_w].copy()
-        box_diff = box*((mask_ifft != 0) * (box != 0))
-        box_diff *= (mask_ifft != 0)
-        box_sum = np.sum(box_diff)
+        box_diff = (mask_ifft != 0) * (box != 0)
+        box_diff_inv = (mask_ifft == 0) * (box == 0)
+        box *= box_diff + box_diff_inv
+        box_sum = np.sum(box)
         key = (h,w)
         diffs[key] = box_sum/mask_sum
 ```
