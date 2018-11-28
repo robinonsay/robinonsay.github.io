@@ -8,7 +8,7 @@ icon: "res/output_51_0.jpg"
 ---
 # Simple Facial Recognition using NumPy
 
-I have always been fascinated with signal processing, and facial recognition. I wanted to understand signal processing techniques on my own. As a result, I decided to attempt facial recognition using only NumPy. I'm not claiming that the following algorithm is efficient, original, or effective. The following guide documents my learning process
+I have always been fascinated with signal processing, and facial recognition. I wanted to understand signal processing techniques on my own. As a result, I decided to attempt facial recognition using only NumPy. I'm not claiming that the following algorithm is the optimal solution. The following guide documents my learning process
 
 ## Pick out the human face in the selfie
 I specifically chose selfies because the distance from the camera to the face would be relatively constant. This makes the recognition easier. I wasn't sure how to deal with the challenge of drastically varying distances. Maybe I'll attempt that in another tutorial, but for now we'll stick with selfies.
