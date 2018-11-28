@@ -376,6 +376,8 @@ buffer_size = res
 center_arr = np.zeros((buffer_size, 3))  # 3D Coordinates, (x,y,diff)
 # Convert the mask back to the spatial domain
 mask_ifft = to_ifft2(mask_fshift)
+# Remove noise
+mask_ifft *= (mask_ifft > 0.4)
 # Get the sum of the mask. This will be our reference
 mask_sum = np.sum(mask_ifft)
 ```
