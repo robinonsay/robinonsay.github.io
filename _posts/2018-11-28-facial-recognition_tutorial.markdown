@@ -427,6 +427,21 @@ ax.imshow(img)
 fig.savefig('{}_result.jpg'.format(fname[:-4]))
 ```
 
-
 ![png](/res/output_51_0.png)
+
+
+
+## Results
+
+Below are a few other successful results:
+
+![re1](/res/easy_stock_result.jpg)
+
+![re1](/res/eb-hat_result.jpg)
+
+![re1](/res/eb-outside1_result.jpg)
+
+![re1](/res/eb-outside2_result.jpg)
+
+![re1](/res/jsc2017e029904-low_result.jpg)
 
