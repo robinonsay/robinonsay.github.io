@@ -11,6 +11,7 @@ In my free time, I enjoy playing saxophone, guitar, and piano, along with mounta
 <div class="col-md-6 text-center">
     <h3>Accomplishments</h3>
     <div class="list-group">
+        <a href="#" class="list-group-item"> Pathways Co-op at Johnson Space Center</a>
         <a href="https://www.elephant.rocks" class="list-group-item" target="_blank">Co-Founder and CTO of Elephant, Inc. 🐘</a>
         <a href="https://www.nasa.gov/centers/johnson/education/interns/index.html" class="list-group-item" target="_blank">NASA Johnson Space Center Intern <i class="fa fa-space-shuttle" aria-hidden="true"></i></a>
         <a href="http://devpost.com/software/eggsy" class="list-group-item" target="_blank">Best IoT Hack PennApps XIV <i class="fa fa-trophy"></i></a>
