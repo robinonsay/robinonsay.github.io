@@ -85,6 +85,8 @@ plt.imshow(mask_img, cmap='gray')
 
 We make sure our target image is scaled properly with respect to the mask.
 After doing some experimentation, I've found the following ratio to be ideal for selfies: 
+
+
 $$
 \frac{\text{target image height}}{\text{mask height}} \approx \frac{3}{1}
 $$
@@ -124,6 +126,8 @@ def to_grayscale(image, weights = np.c_[0.2989, 0.5870, 0.1140]):
 ```
 
 Its computationally faster to process a grayscale image. By converting the image to grayscale, we eliminate 2 dimensions from our image. This is a result of mapping the RGB values to 1 grayscale value. The weights used are determined by the following [grayscale equation](https://en.wikipedia.org/wiki/Grayscale):
+
+
 $$
 Y' = 0.2989R' + 0.5870G' + 0.1140B'
 $$
@@ -209,6 +213,8 @@ def to_ifft2(img_fshift):
 ```
 
 We create another function to display the FFT image. We will plot the magnitude and phase of the FFT result. The magnitude has peaks at very sparse values, it makes sense for this to be in a log scale. We will use the following formula:
+
+
 $$
 |f(j\omega)|_{db} = 20\log |f(j\omega)+1|
 $$
@@ -250,6 +256,8 @@ def show_ifft(img_fshift):
 ```
 
 We will need a high-pass filter for this project. A simple way to do this is to use a low-pass filter, and subtract the result from the original input:
+
+
 $$
 H_{pass} = T - L_{pass}
 $$
@@ -405,7 +413,9 @@ $$
 
 There are a few conditions we must consider when applying our mask. Let's define our function $$B_{\text{diff}}(B,M)​$$ where $$B​$$ is the matrix (image) of the *box* and $$M​$$ is the matrix (image) of the mask. $$B_{\text{diff}}(B,M)​$$ maps the set of *boxes* and *masks* to the set of matrices consisting of the differences between the two. $$B_{\text{diff}}(B,M)​$$  must be one-to-one and continuous for all $$B​$$ and $$M​$$. Given our function is defined as continuous and one-to-one, the intermediate value theroem applies. This implies that only the boundary cases need consideration while building $$B_{\text{diff}}(B, M)​$$. Additionally, the domain of $$B_{\text{diff}}(B,M)​$$ are discrete values of  $$0​$$ or $$1​$$. Moreover, $$M​$$ remains constant as the *box* translates around the target image.
 
-Given all these constraints, there are two boundary cases to consider: $$B​$$ is a matrix of $$1​$$'s, and $$B​$$ is a matrix of $$0​$$'s.
+Given all these constraints, there are two boundary cases to consider: $$B$$ is a matrix of $$1$$'s, and $$B$$ is a matrix of $$0$$'s.
+
+
 $$
 \text{Given}\ B_1 =
 \begin{bmatrix}
@@ -466,14 +476,22 @@ for h in range(0, img_h - mask_h, mask_h // res):
 
 We need to find the the coordinates of the *box* with the smallest difference between it and the mask. We will store these values in the buffer.
 
-Based on our function $$B_{\text{diff}}(B,M)​$$, we can use the following ratio to determine the likeness between the *box* and our mask:
+Based on our function $$B_{\text{diff}}(B,M)$$, we can use the following ratio to determine the likeness between the *box* and our mask:
+
+
 $$
 \frac{B_{\text{diff}}(B,M)}{\sum(M)} \\
 $$
+
+
 This ratio has the following property:
+
+
 $$
 \frac{B_{\text{diff}}(M,M)}{\sum(M)} = \frac{\sum(M)}{\sum(M)} = 1 \\
 $$
+
+
 This allows us to determine how much the *box* and mask differ.
 
 
