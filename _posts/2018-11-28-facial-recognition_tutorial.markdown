@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "Facial Recognition with Numpy"
+title:  "Face Detection with Numpy"
 date:   2018-11-28 13:30:26 -0400
 categories: project
 mathjax: true
 icon: "res/output_51_0.jpg"
 ---
-# Simple Facial Recognition using NumPy
+# Simple Face Detection using NumPy
 
-I have always been fascinated with signal processing, and facial recognition. I wanted to understand signal processing techniques on my own. As a result, I decided to attempt facial recognition using only NumPy. I'm not claiming that the following algorithm is the optimal solution. The following guide documents my learning process
+I have always been fascinated with signal processing, and facial recognition. I wanted to understand signal processing techniques on my own. As a result, I decided to attempt facial detection using only NumPy. I'm not claiming that the following algorithm is the optimal solution. The following guide documents my learning process
 
-## Pick out the human face in the selfie
+## Goal: Detect a Human Face in a Selfie
 I specifically chose selfies because the distance from the camera to the face would be relatively constant. This makes the recognition easier. I wasn't sure how to deal with the challenge of drastically varying distances. Maybe I'll attempt that in another tutorial, but for now we'll stick with selfies.
 
 ## 1. Setup
@@ -85,8 +85,10 @@ plt.imshow(mask_img, cmap='gray')
 
 We make sure our target image is scaled properly with respect to the mask.
 After doing some experimentation, I've found the following ratio to be ideal for selfies: 
+$$
+\frac{\text{target image height}}{\text{mask height}} \approx \frac{3}{1}
+$$
 
-$$\frac{\text{target image height}}{\text{mask height}} \approx \frac{3}{1}$$
 
 
 ```python
@@ -121,9 +123,11 @@ def to_grayscale(image, weights = np.c_[0.2989, 0.5870, 0.1140]):
     
 ```
 
-It's computationally faster to process a grayscale image. By converting the image to grayscale, we eliminate 2 dimensions from our image. This is a result of mapping the RGB values to 1 grayscale value. The weights used are determined by the following [grayscale equation](https://en.wikipedia.org/wiki/Grayscale):
+Its computationally faster to process a grayscale image. By converting the image to grayscale, we eliminate 2 dimensions from our image. This is a result of mapping the RGB values to 1 grayscale value. The weights used are determined by the following [grayscale equation](https://en.wikipedia.org/wiki/Grayscale):
+$$
+Y' = 0.2989R' + 0.5870G' + 0.1140B'
+$$
 
-$$Y' = 0.2989R' + 0.5870G' + 0.1140B'$$
 
 
 ```python
@@ -205,8 +209,10 @@ def to_ifft2(img_fshift):
 ```
 
 We create another function to display the FFT image. We will plot the magnitude and phase of the FFT result. The magnitude has peaks at very sparse values, it makes sense for this to be in a log scale. We will use the following formula:
+$$
+|f(j\omega)|_{db} = 20\log |f(j\omega)+1|
+$$
 
-$$|f(j\omega)|_{db} = 20\log |f(j\omega)+1|$$
 
 
 ```python
@@ -244,8 +250,10 @@ def show_ifft(img_fshift):
 ```
 
 We will need a high-pass filter for this project. A simple way to do this is to use a low-pass filter, and subtract the result from the original input:
+$$
+H_{pass} = T - L_{pass}
+$$
 
-$$H_{pass} = T - L_{pass}$$
 
 
 ```python
@@ -382,28 +390,91 @@ mask_ifft *= (mask_ifft > 0.4)
 mask_sum = np.sum(mask_ifft)
 ```
 
-We will move our *box* by the following ratio each iteration: 
+## 5. The *box* function
 
-$$\frac{\text{mask height}}{\text{resolution}}$$
+### Moving the *box*:
 
-We then apply the mask to the image, and take the sum of the result. We divide this resulting sum, from the sum of the mask. We store this ratio in the dictionary `diffs`, indexed by the coordinates of the *box*: 
+Our function will move a *box* around the processed target image, comparing itself to the `mask_ifft` image. Each iteration the *box* will translate in the $x$ and $y$ direction by the following ratio: 
+$$
+\text{Given $i_n$ and $j_n$ is the current position of the box:} \\
+i_n = i_{n-1} + \frac{\text{mask height}}{\text{resolution}} \\
+j_n = j_{n-1} + \frac{\text{mask height}}{\text{resolution}}
+$$
 
-$$D= \frac{\sum box}{\sum mask}$$
+### Applying the Mask:
 
+There are a few conditions we must consider when applying our mask. Let's define our function $B_{\text{diff}}(B,M)$ where $B$ is the matrix (image) of the *box* and $M$ is the matrix (image) of the mask. $B_{\text{diff}}(B,M)$ maps the set of *boxes* and *masks* to the set of matrices consisting of the differences between the two. $B_{\text{diff}}(B,M)$  must be one-to-one and continuous for all $B$ and $M$. Given our function is defined as continuous and one-to-one, the intermediate value theroem applies. This implies that only the boundary cases need consideration while building $B_{\text{diff}}(B, M)$. Additionally, the domain of $B_{\text{diff}}(B,M)$ are discrete values of  $0$ or $1$. Moreover, $M$ remains constant as the *box* translates around the target image.
+
+Given all these constraints, there are two boundary cases to consider: $B$ is a matrix of $1$'s, and $B$ is a matrix of $0$'s.
+$$
+\text{Given}\ B_1 =
+\begin{bmatrix}
+1 & 1 & \dots \\
+\vdots & \ddots & \\
+1 & 1 & 1 \\
+\end{bmatrix} \text{where $B$ and $M$ are $a \times b$ matrices, we must develop an equation such that} \sum B_{\text{diff}}(B_1,M) \not= \sum(M)
+$$
+
+$$
+R  = M \odot B \\
+R' = M -2M \odot B + B \\
+B_{\text{diff}}(B,M) = R - R' = \sum_{i=0}^{a}\sum_{j=0}^{b}(r_{ij}) - \sum_{i=0}^{a}\sum_{j=0}^{b}(r'_{ij})
+\\
+R_{B_1} = M \odot B_1 = M \\
+R'_{B_1} = M -2M \odot B_1 + B_1 = M - 2M + B_1 = B_1 - M \\
+B_{\text{diff}}(B_1,M) = R_{B_1} - R'_{B_1} = M - (B_1 - M) = 2M - B_1 \\
+\sum B_{\text{diff}}(B_1,M) = \sum(2M - B_1) \not= \sum(M)
+$$
+
+$$
+\text{Given}\ B_1 =
+\begin{bmatrix}
+0 & 0 & \dots \\
+\vdots & \ddots & \\
+0 & 0 & 0 \\
+\end{bmatrix} \text{where $B$ and $M$ are $a \times b$ matrices, we must develop an equation such that} \sum B_{\text{diff}}(B_0,M) \not= \sum(M)
+$$
+
+$$
+R  = M \odot B \\
+R' = M -2M \odot B + B \\
+B_{\text{diff}}(B,M) = R - R' = \sum_{i=0}^{a}\sum_{j=0}^{b}(r_{ij}) - \sum_{i=0}^{a}\sum_{j=0}^{b}(r'_{ij})
+\\
+R_{B_0} = M \odot B_0 = B_0 \\
+R'_{B_0} = M -2M \odot B_0 + B_0 = M - B_0 + B_0 = M \\
+B_{\text{diff}}(B_0,M) = R_{B_0} - R'_{B_0} = B_0 - M = -M\\
+\sum B_{\text{diff}}(B_0,M) = \sum(-M) \not= \sum(M)
+$$
+
+This function is written as follows:
 
 ```python
 for h in range(0, img_h - mask_h, mask_h // res):
     for w in range(0, img_w - mask_w, mask_w // res):
+        # Creates Box
         box = img_post_ifft[h:h+mask_h, w:w+mask_w].copy()
+        # All elements that ARE in mask and NOT zero
         box_diff = (mask_ifft != 0) * (box != 0)
+        # All elements that are NOT in mask and ARE zero
         box_diff_inv = (mask_ifft == 0) * (box == 0)
-        box *= box_diff + box_diff_inv
-        box_sum = np.sum(box)
+        # Subtract the box_diff with it's inverse
+        box_sum = np.sum(box_diff) - np.sum(box_diff_inv)
         key = (h,w)
+        # Write the ratio to the dictionary
         diffs[key] = box_sum/mask_sum
 ```
 
 We need to find the the coordinates of the *box* with the smallest difference between it and the mask. We will store these values in the buffer.
+
+Based on our function $B_{\text{diff}}(B,M)$, we can use the following ratio to determine the likeness between the *box* and our mask:
+$$
+\frac{B_{\text{diff}}(B,M)}{\sum(M)} \\
+$$
+This ratio has the following property:
+$$
+\frac{B_{\text{diff}}(M,M)}{\sum(M)} = \frac{\sum(M)}{\sum(M)} = 1 \\
+$$
+This allows us to determine how much the *box* and mask differ.
 
 
 ```python
@@ -416,7 +487,9 @@ for key,val in diffs.items():
             break
 ```
 
-Finally we plot the result on the original target image. We will take the weighted average of the buffer's coordinates to find our solution. The weight is determined by the difference ratio.
+Finally we plot the *box*'s which differ the least from the mask onto the original target image.
+
+We accomplish this by taking the weighted average of the buffer's coordinates. The weight is determined by the ratio between the *box* and mask.
 
 
 ```python
@@ -430,7 +503,7 @@ ax.imshow(img)
 fig.savefig('{}_result.jpg'.format(fname[:-4]))
 ```
 
-![png](/res/output_51_0.png)
+![png](/res/output_51_0.jpg)
 
 
 
