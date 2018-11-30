@@ -426,14 +426,16 @@ $$
 $$
 
 $$
-R  = M \odot B \\
-R' = M -2M \odot B + B \\
-B_{\text{diff}}(B,M) = R - R' = \sum_{i=0}^{a}\sum_{j=0}^{b}(r_{ij}) - \sum_{i=0}^{a}\sum_{j=0}^{b}(r'_{ij})
+\begin{align}
+R  &= M \odot B \\
+R' &= M -2M \odot B + B \\
+B_{\text{diff}}(B,M) &= R - R' = \sum_{i=0}^{a}\sum_{j=0}^{b}(r_{ij}) - \sum_{i=0}^{a}\sum_{j=0}^{b}(r'_{ij})
 \\
-R_{B_1} = M \odot B_1 = M \\
-R'_{B_1} = M -2M \odot B_1 + B_1 = M - 2M + B_1 = B_1 - M \\
-B_{\text{diff}}(B_1,M) = R_{B_1} - R'_{B_1} = M - (B_1 - M) = 2M - B_1 \\
-\sum B_{\text{diff}}(B_1,M) = \sum(2M - B_1) \not= \sum(M)
+R_{B_1} &= M \odot B_1 = M \\
+R'_{B_1} &= M -2M \odot B_1 + B_1 = M - 2M + B_1 = B_1 - M \\
+B_{\text{diff}}(B_1,M) &= R_{B_1} - R'_{B_1} = M - (B_1 - M) = 2M - B_1 \\
+\sum B_{\text{diff}}(B_1,M) &= \sum(2M - B_1) \not= \sum(M)
+\end{align}
 $$
 
 $$
@@ -446,14 +448,16 @@ $$
 $$
 
 $$
-R  = M \odot B \\
-R' = M -2M \odot B + B \\
-B_{\text{diff}}(B,M) = R - R' = \sum_{i=0}^{a}\sum_{j=0}^{b}(r_{ij}) - \sum_{i=0}^{a}\sum_{j=0}^{b}(r'_{ij})
+\begin{align}
+R  &= M \odot B \\
+R' &= M -2M \odot B + B \\
+B_{\text{diff}}(B,M) &= R - R' = \sum_{i=0}^{a}\sum_{j=0}^{b}(r_{ij}) - \sum_{i=0}^{a}\sum_{j=0}^{b}(r'_{ij})
 \\
-R_{B_0} = M \odot B_0 = B_0 \\
-R'_{B_0} = M -2M \odot B_0 + B_0 = M - B_0 + B_0 = M \\
-B_{\text{diff}}(B_0,M) = R_{B_0} - R'_{B_0} = B_0 - M = -M\\
-\sum B_{\text{diff}}(B_0,M) = \sum(-M) \not= \sum(M)
+R_{B_0} &= M \odot B_0 = B_0 \\
+R'_{B_0} &= M -2M \odot B_0 + B_0 = M - B_0 + B_0 = M \\
+B_{\text{diff}}(B_0,M) &= R_{B_0} - R'_{B_0} = B_0 - M = -M\\
+\sum B_{\text{diff}}(B_0,M) &= \sum(-M) \not= \sum(M)
+\end{align}
 $$
 
 This function is written as follows:
