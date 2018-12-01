@@ -17,5 +17,5 @@ linkedin_username: robinonsay
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
