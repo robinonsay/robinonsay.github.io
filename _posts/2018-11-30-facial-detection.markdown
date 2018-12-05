@@ -1,11 +1,10 @@
----
 layout: post
 title:  "Face Detection with Numpy"
 date:   2018-11-28 13:30:26 -0400
 categories: project
 mathjax: true
 icon: "res/output_51_0.jpg"
----
+
 # Simple Face Detection using NumPy
 
 I have always been fascinated with signal processing, and facial recognition. I wanted to understand signal processing techniques on my own. As a result, I decided to attempt facial detection using only NumPy. I'm not claiming that the following algorithm is the optimal solution. The following guide documents my learning process
@@ -411,20 +410,16 @@ $$
 
 ### Applying the Mask:
 
-There are a few conditions we must consider when applying our mask. Let's define our function $$B_{\text{diff}}(B,M)​$$ where $$B​$$ is the matrix (image) of the *box* and $$M​$$ is the matrix (image) of the mask. $$B_{\text{diff}}(B,M)​$$ maps the set of *boxes* and *masks* to the set of matrices consisting of the differences between the two. $$B_{\text{diff}}(B,M)​$$  must be one-to-one and continuous for all $$B​$$ and $$M​$$. Given our function is defined as continuous and one-to-one, the intermediate value theroem applies. This implies that only the boundary cases need consideration while building $$B_{\text{diff}}(B, M)​$$. Additionally, the domain of $$B_{\text{diff}}(B,M)​$$ are discrete values of  $$0​$$ or $$1​$$. Moreover, $$M​$$ remains constant as the *box* translates around the target image.
+There are a few conditions we must consider when applying our mask. Let's define our function $$B_{\text{diff}}(B,M)$$ where $$B$$ is the matrix (image) of the *box* and $$M$$ is the matrix (image) of the mask. $$B_{\text{diff}}(B,M)$$ maps the set of *boxes* and *masks* to the set of matrices consisting of the differences between the two. $$B_{\text{diff}}(B,M)$$  must be one-to-one and continuous for all $$B$$ and $$M$$. Given our function is defined as continuous and one-to-one, the intermediate value theroem applies. This implies that only the boundary cases need consideration while building $$B_{\text{diff}}(B, M)$$. Additionally, the domain of $$B_{\text{diff}}(B,M)$$ are discrete values of  $$0$$ or $$1$$. Moreover, $$M$$ remains constant as the *box* translates around the target image.
 
 Given all these constraints, there are two boundary cases to consider: $$B$$ is a matrix of $$1$$'s, and $$B$$ is a matrix of $$0$$'s.
 
-
-$$
-\text{Given}\ B_1 =
+Given $$B_1 =
 \begin{bmatrix}
 1 & 1 & \dots \\
 \vdots & \ddots & \\
 1 & 1 & 1 \\
-\end{bmatrix} \text{where $B$ and $M$ are $a \times b$ matrices, we must develop an equation such that} \sum B_{\text{diff}}(B_1,M) \not= \sum(M)
-$$
-
+\end{bmatrix}$$ where $$B$$ and $$M$$ are $$a \times b$$ matrices, we must develop an equation such that $$\sum B_{\text{diff}}(B_1,M) \not= \sum(M)$$
 $$
 \begin{align}
 R  &= M \odot B \\
@@ -438,15 +433,11 @@ B_{\text{diff}}(B_1,M) &= R_{B_1} - R'_{B_1} = M - (B_1 - M) = 2M - B_1 \\
 \end{align}
 $$
 
-$$
-\text{Given}\ B_1 =
-\begin{bmatrix}
+Given $$B_0 = \begin{bmatrix}
 0 & 0 & \dots \\
 \vdots & \ddots & \\
 0 & 0 & 0 \\
-\end{bmatrix} \text{where $B$ and $M$ are $a \times b$ matrices, we must develop an equation such that} \sum B_{\text{diff}}(B_0,M) \not= \sum(M)
-$$
-
+\end{bmatrix}$$ where $$B$$ and $$M$$ are $$a \times b$$ matrices, we must develop an equation such that $$\sum B_{\text{diff}}(B_0,M) \not= \sum(M)$$
 $$
 \begin{align}
 R  &= M \odot B \\
