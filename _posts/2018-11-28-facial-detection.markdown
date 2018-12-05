@@ -1,9 +1,11 @@
+---
 layout: post
 title:  "Face Detection with Numpy"
 date:   2018-11-28 13:30:26 -0400
 categories: project
 mathjax: true
 icon: "res/output_51_0.jpg"
+---
 
 # Simple Face Detection using NumPy
 
