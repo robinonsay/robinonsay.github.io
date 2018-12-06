@@ -19,7 +19,7 @@ permalink: /projects/
         </div>
 
         <div class="col-md-12" id="div-zwapp">
-            <h3><a class="a-title" href="http://devpost.com/software/zwapp-qavshg" target="_blank">Zwapp</a></h3>
+            <h3><a class="a-title" href="https://devpost.com/software/zwapp-qavshg" target="_blank">Zwapp</a></h3>
             <div id="zwapp-carousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -29,7 +29,7 @@ permalink: /projects/
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img  class="img-responsive" src="http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/351/409/datas/gallery.jpg" alt="Zwapp Picture">
+                        <img  class="img-responsive" src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/351/409/datas/gallery.jpg" alt="Zwapp Picture">
                     </div>
                 </div>
 
@@ -64,19 +64,19 @@ permalink: /projects/
                 <div class="list-group">
                     <a href="https://developer.apple.com/swift/" class="list-group-item" target="_blank">IOS Swift <i class="fa fa-apple"></i></a>
                     <a href="https://nodejs.org/en/" class="list-group-item" target="_blank">Node.js</a>
-                    <a href="http://passportjs.org/" class="list-group-item" target="_blank">Passport.js</a>
+                    <a href="https://passportjs.org/" class="list-group-item" target="_blank">Passport.js</a>
                     <a href="https://www.linode.com/" class="list-group-item" target="_blank">Linode</a>
                     <a href="https://www.firebase.com/" class="list-group-item" target="_blank">Firebase <i class="fa fa-database"></i></a>
                     <a href="https://www.twilio.com/" class="list-group-item" target="_blank">Twilio</a>
                     <a href="https://developers.facebook.com/docs/graph-api" class="list-group-item" target="_blank">Facebook-graph <i class="fa fa-facebook"></i></a>
-                    <a href="http://oauth.net/2/" class="list-group-item" target="_blank">Oauth 2.0</a>
+                    <a href="https://oauth.net/2/" class="list-group-item" target="_blank">Oauth 2.0</a>
                     <a href="https://www.nginx.com/" class="list-group-item" target="_blank">Nignx</a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-12" id="div-datadoc" hidden>
-            <h3><a class="a-title" href="http://devpost.com/software/datadoc" target="_blank">DataDoc</a></h3>
+            <h3><a class="a-title" href="https://devpost.com/software/datadoc" target="_blank">DataDoc</a></h3>
             <div id="datadoc-carousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -123,19 +123,19 @@ permalink: /projects/
             <div class="col-md-6 sub-col-wrapper">
                 <h4>Built With</h4>
                 <div class="list-group">
-                    <a href="http://www.w3schools.com/" class="list-group-item" target="_blank">HTML <i class="fa fa-html5"></i></a>
-                    <a href="http://www.w3schools.com/" class="list-group-item" target="_blank">CSS <i class="fa fa-css3"></i></a>
-                    <a href="http://www.w3schools.com/" class="list-group-item" target="_blank">JavaScript <i class="fa fa-code"></i></a>
-                    <a href="http://flask.pocoo.org/" class="list-group-item" target="_blank">Python Flask</a>
+                    <a href="https://www.w3schools.com/" class="list-group-item" target="_blank">HTML <i class="fa fa-html5"></i></a>
+                    <a href="https://www.w3schools.com/" class="list-group-item" target="_blank">CSS <i class="fa fa-css3"></i></a>
+                    <a href="https://www.w3schools.com/" class="list-group-item" target="_blank">JavaScript <i class="fa fa-code"></i></a>
+                    <a href="https://flask.pocoo.org/" class="list-group-item" target="_blank">Python Flask</a>
                     <a href="https://www.linode.com/" class="list-group-item" target="_blank">Linode</a>
                     <a href="https://www.mongodb.org/" class="list-group-item" target="_blank">MongoDB</a>
-                    <a href="http://www.jnj.com/" class="list-group-item" target="_blank">Johnson &amp; Johnson API </a>
+                    <a href="https://www.jnj.com/" class="list-group-item" target="_blank">Johnson &amp; Johnson API </a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-12" id="div-studr" hidden>
-            <h3><a class="a-title" href="http://devpost.com/software/studr" target="_blank">Studr</a></h3>
+            <h3><a class="a-title" href="https://devpost.com/software/studr" target="_blank">Studr</a></h3>
             <div id="studr-carousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -146,11 +146,11 @@ permalink: /projects/
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img  class="img-responsive" src="http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/288/558/datas/gallery.jpg" alt="Studr Picture">
+                        <img  class="img-responsive" src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/288/558/datas/gallery.jpg" alt="Studr Picture">
                     </div>
 
                     <div class="item">
-                        <img class="img-responsive" src="http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/288/557/datas/gallery.jpg" alt="Studr pic ux">
+                        <img class="img-responsive" src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/288/557/datas/gallery.jpg" alt="Studr pic ux">
                     </div>
                 </div>
 
@@ -190,7 +190,7 @@ permalink: /projects/
         </div>
 
         <div class="col-md-12" id="div-medinar" hidden>
-            <h3><a class="a-title" href="http://devpost.com/software/medinar" target="_blank">Medinar</a></h3>
+            <h3><a class="a-title" href="https://devpost.com/software/medinar" target="_blank">Medinar</a></h3>
             <div id="medinar-carousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -201,10 +201,10 @@ permalink: /projects/
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img class="img-responsive" src="http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/233/450/datas/gallery.jpg" alt="Medinar Picture Real life">
+                        <img class="img-responsive" src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/233/450/datas/gallery.jpg" alt="Medinar Picture Real life">
                     </div>
                     <div class="item">
-                        <img class="img-responsive" src="http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/233/444/datas/gallery.jpg" alt="Medinar Picture Real life">
+                        <img class="img-responsive" src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/233/444/datas/gallery.jpg" alt="Medinar Picture Real life">
                     </div>
                 </div>
 

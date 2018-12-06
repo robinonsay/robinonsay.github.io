@@ -21,12 +21,12 @@ DataDoc uses this health data to derive meaningful insights about both the indiv
 ### Stack
 <div class='col-md-6'>
 <div class="list-group">
-<a href="http://flask.pocoo.org/" class="list-group-item" target="_blank">Python Flask</a>
-<a href="http://www.w3schools.com/" class="list-group-item" target="_blank">HTML <i class="fa fa-html5"></i></a>
-<a href="http://www.w3schools.com/" class="list-group-item" target="_blank">CSS <i class="fa fa-css3"></i></a>
-<a href="http://www.w3schools.com/" class="list-group-item" target="_blank">JavaScript <i class="fa fa-code"></i></a>
+<a href="https://flask.pocoo.org/" class="list-group-item" target="_blank">Python Flask</a>
+<a href="https://www.w3schools.com/" class="list-group-item" target="_blank">HTML <i class="fa fa-html5"></i></a>
+<a href="https://www.w3schools.com/" class="list-group-item" target="_blank">CSS <i class="fa fa-css3"></i></a>
+<a href="https://www.w3schools.com/" class="list-group-item" target="_blank">JavaScript <i class="fa fa-code"></i></a>
 <a href="https://www.linode.com/" class="list-group-item" target="_blank">Linode</a>
 <a href="https://www.mongodb.org/" class="list-group-item" target="_blank">MongoDB</a>
-<a href="http://www.jnj.com/" class="list-group-item" target="_blank">Johnson &amp; Johnson API </a>
+<a href="https://www.jnj.com/" class="list-group-item" target="_blank">Johnson &amp; Johnson API </a>
 </div>
 </div>
