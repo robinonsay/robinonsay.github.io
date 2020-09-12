@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-I am currently a student at Michigan State University studying Computer Engineering. I am mainly interested in robotics, machine learning, embedded systems, and autonomous vehicles. I am aspiring to discover something new and amazing, and hoping to make a positive impact on mankind.
+I am currently a student at Michigan State University studying Computer Engineering. I am mainly interested in developing avionics and hardware/software embedded systems to advance Human Spaceflight throguh FPGA systems, ASIC design, and data-science & machine learning. I am aspiring to discover something new and amazing, and hoping to make a positive impact on humankind.
 
 I am a self-taught developer, with a wide variety of skills: Web, Android, iOS development, and more. I attended many hackathons, events were up to 2,000 College students go and create a solution to an everyday problem. They use devices and tools available to the public to create spectacular innovations in technology, Learn more at <a href="https://mlh.io" target="_blank">MLH</a>. Many of my projects have been geared towards improving the quality of life of other people(Check out my <a href="https://devpost.com/robinonsay" target="_blank">Devpost</a> to learn more). I use hackathons as a way to excersise my creativity, and to practice developing my ideas and solutions to real-world problems.
 
