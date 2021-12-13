@@ -11,7 +11,7 @@ email: onsayrobin@gmail.com
 description: This is the portfolio website and blog for the developer Robin Onsay. This paticular website was built using HTML, CSS, JavaScript, JQuery, and Jekyll. It is being hosted on github as a public repository.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://robinonsay.me" # the base hostname & protocol for your site
-twitter_username: OnsayRao
+twitter_username: robinonsay
 github_username:  robinonsay
 linkedin_username: robinonsay
 

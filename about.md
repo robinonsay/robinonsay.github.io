@@ -1,85 +1,13 @@
 ---
 layout: page
-title: About
+title: About Robin
 permalink: /about/
 ---
-I am currently a student at Michigan State University studying Computer Engineering. I am mainly interested in developing avionics and hardware/software embedded systems to advance Human Spaceflight throguh FPGA systems, ASIC design, and data-science & machine learning. I am aspiring to discover something new and amazing, and hoping to make a positive impact on humankind.
 
-I am a self-taught developer, with a wide variety of skills: Web, Android, iOS development, and more. I attended many hackathons, events were up to 2,000 College students go and create a solution to an everyday problem. They use devices and tools available to the public to create spectacular innovations in technology, Learn more at <a href="https://mlh.io" target="_blank">MLH</a>. Many of my projects have been geared towards improving the quality of life of other people(Check out my <a href="https://devpost.com/robinonsay" target="_blank">Devpost</a> to learn more). I use hackathons as a way to excersise my creativity, and to practice developing my ideas and solutions to real-world problems.
+Robin is currently a student at Michigan State University studying Computer Engineering and will be graduating in Spring 2022. His primary areas of interest are in Embedded Systems, FPGA design, RF circuit design, Artificial Intelligence, and Algorithims. Robin is particularly interested in exercising the skills he has acquired over years of study at MSU and Pathways internships with NASA Johnson Space Center within the context of human spaceflight. In a more general sense, Robin believes that it is an obligation of engineers to be aware of how their intellect is applied and its impacts on humanity. As a result, Robin believes it is of the utmost importance to work in areas and industries that forward humanity’s progress toward a more just and peaceful world.
 
-In my free time, I enjoy playing saxophone, guitar, and piano, along with mountain biking and camping. I always look for a challenge, and even when it is seemingly impossible, I always manage to get the job done. As a result, I have had many success during hackathons, my development jobs, and in life.
-<div class="col-md-6 text-center">
-    <h3>Accomplishments</h3>
-    <div class="list-group">
-        <a href="#" class="list-group-item"> Pathways Co-op at Johnson Space Center</a>
-        <a href="https://www.elephant.rocks" class="list-group-item" target="_blank">Co-Founder and CTO of Elephant, Inc. 🐘</a>
-        <a href="https://www.nasa.gov/centers/johnson/education/interns/index.html" class="list-group-item" target="_blank">NASA Johnson Space Center Intern <i class="fa fa-space-shuttle" aria-hidden="true"></i></a>
-        <a href="https://devpost.com/software/eggsy" class="list-group-item" target="_blank">Best IoT Hack PennApps XIV <i class="fa fa-trophy"></i></a>
-        <a href="https://drivespotter.com/" class="list-group-item" target="_blank">Junior Software Developer at Drive Spotter <i class="fa fa-truck" aria-hidden="true"></i></a>
-        <a href="https://kpcbfellows.com/" class="list-group-item" target="_blank">KPCB Fellowship Finalist</a>
-        <a href="https://devpost.com/software/datadoc" class="list-group-item" target="_blank">Health Route Prize PennApps XIII <i class="fa fa-trophy"></i></a>
-        <a href="https://devpost.com/software/medinar" class="list-group-item" target="_blank">KPCB Challenge Winner <i class="fa fa-trophy"></i></a>
-        <a href="https://devpost.com/software/medinar" class="list-group-item" target="_blank">Best Use of FireBase API <i class="fa fa-trophy"></i></a>
-        <a href="https://www.youtube.com/watch?v=gLgrIipmT9Q" class="list-group-item" target="_blank">Can make a fierce pterodactyl sound <i class="fa fa-child"></i></a>
-    </div>
-</div>
-<div class="col-md-6 text-center">
-    <h3>Technical Skills</h3>
-    <div class="list-group">
-        <a class="list-group-item">Android</a>
-        <a class="list-group-item">IOS</a>
-        <a class="list-group-item">Web</a>
-        <a class="list-group-item">VHDL and Embedded Systems</a>
-        <a class="list-group-item">MEAN Web Stack</a>
-        <a class="list-group-item">LAMP Web Stack</a>
-        <a class="list-group-item">Python</a>
-        <a class="list-group-item">Swift</a>
-        <a class="list-group-item">Java</a>
-        <a class="list-group-item">JavaScript</a>
-        <a class="list-group-item">CSS and SCSS</a>
-        <a class="list-group-item">HTML</a>
-        <a class="list-group-item">C and C++</a>
-    </div>
-    <h3>Non-technical Skills</h3>
-    <div class="list-group">
-        <a class="list-group-item">NAUI SCUBA cert</a>
-        <a class="list-group-item">Piano</a>
-        <a class="list-group-item">Guitar</a>
-        <a class="list-group-item">Saxophone</a>
-        <a class="list-group-item">Leadership</a>
-        <a class="list-group-item">Determination</a>
-        <a class="list-group-item">Teamwork</a>
-    </div>
+As alluded to previously, Robin has engaged in eight internship rotations with NASA Johnson Space Center in Houston, Texas. There he worked in a variety of different branches to gain a diverse exposure to the various operations at NASA JSC. Robin’s first two internships with NASA JSC were through the University Space Research Association (USRA/NIFS) program. There he developed a tool known as HOMER which examines Orion memory and dumps requested telemetry to Java Mission Evaluation Workstation software. HOMER is now used in Orion integration labs across the country.
 
-</div>
-<section class="counter" id="counter">
-    <div class="row" id="div-code-counter">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-            <h2>
-                Robin has been developing for
-            </h2>
-        </div>
-        <div class="col-md-offset-2 text-center" id="div-timers">
-            <div class="col-md-2 col-xs-6">
-                <h1 class="years"></h1>
-                <p class="years-lable small"></p>
-            </div>
-            <div class="col-md-2 col-xs-6">
-                <h1 class="days"></h1>
-                <p class="days-lable small"></p>
-            </div>
-            <div class="col-md-2 col-xs-6">
-                <h1 class="hours"></h1>
-                <p class="hours-lable small"></p>
-            </div>
-            <div class="col-md-2 col-xs-6">
-                <h1 class="minutes"></h1>
-                <p class="minutes-lable small"></p>
-            </div>
-            <div class="col-md-2 col-xs-6">
-                <h1 class="seconds"></h1>
-                <p class="seconds-lable small"></p>
-            </div>
-        </div>
-    </div>
-</section>
+After Robin’s first two internships, he was admitted into the Pathways internship program, where he had the opportunity to perform multiple work rotations with NASA JSC while completing his Computer Engineering Degree. His first Pathways internship was with the Avionics Systems Division, Wireless Communications Branch. There he tested and optimized RFID enabled embedded systems for tracking stowage aboard the International Space Station and developed supporting embedded software tools for REALM engineers. His next rotation was within flight operations, specifically the Spaceflight Systems Division, Command & Data Handling Branch. During this rotation Robin integrated HOMER into Artemis flight-control operations, supported Orion communication testing (SpaceComm) with display, computation, and procedure development, and learned essential flight controller skills for human spaceflight. To expand his range of experiences, Robin then did a Pathways rotation with the Robotics and Simulation Division, Robotics Branch. There he developed test software for the Valkyrie humanoid robot. Robin then performed two rotations with the Avionics Systems Division, Command & Data Handling Branch. During this time, he developed a Wireless Access Point (WAP) for the Gateway lunar space station, as well as a custom FPGA design to perform Cross-Correlation for high-resolution and non-invasive gauging of both settled and unsettled liquids in reduced gravity. Most recently Robin worked in the Avionics Systems Division, Electronic Design and Manufacturing Branch, during which he learned the fundamentals of EMI, EMC, and spacecraft charging, as well as supported the E3 team.
+
+Robin is a very passionate Computer Engineering student and is dedicated to the work he is doing both in school and at NASA JSC. He has experienced many trials and tribulations over the course of his academic career, which makes him well suited for solving technical and non-technical challenges. Robin is a versatile, resilient person, and with the experience he has acquired over years of study and work experience, he has become an excellent problem-solver in Computer Engineering.
