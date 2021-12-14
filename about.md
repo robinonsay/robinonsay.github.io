@@ -3,7 +3,8 @@ layout: page
 title: About Robin Onsay
 permalink: /about/
 ---
-{{site.description}}
+{{site.description}} In a more general sense, Robin believes that it is an obligation of engineers to be aware of humanitarian impacts and ethical dilemmas when deciding where to apply their engineering skills.
+
 
 As alluded to previously, Robin has engaged in eight internship rotations with NASA Johnson Space Center in Houston, Texas. There he worked in a variety of different branches to gain a diverse exposure to the various operations at NASA JSC. Robin’s first two internships with NASA JSC were through the University Space Research Association (USRA/NIFS) program. There he developed a tool known as HOMER which examines Orion memory and dumps requested telemetry to Java Mission Evaluation Workstation software. HOMER is now used in Orion integration labs across the country.
 

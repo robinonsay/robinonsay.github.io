@@ -8,7 +8,7 @@
 # Site settings
 title: Robin Onsay
 email: onsayrobin@gmail.com
-description: Robin is currently a student at Michigan State University studying Computer Engineering and will be graduating in Spring 2022. His primary areas of interest are in Embedded Systems, FPGA design, RF circuit design, Artificial Intelligence, and Algorithims. Robin is particularly interested in exercising the skills he has acquired over years of study at MSU and Pathways internships with NASA Johnson Space Center within the context of human spaceflight. In a more general sense, Robin believes that it is an obligation of engineers to be aware of humanitarian impacts and ethical dilemmas when deciding where to apply their engineering skills.
+description: Robin is currently a student at Michigan State University studying Computer Engineering and will be graduating in Spring 2022. His primary areas of interest are in Embedded Systems, FPGA design, RF circuit design, Artificial Intelligence, and Algorithims. Robin is particularly interested in exercising the skills he has acquired over years of study at MSU and Pathways internships with NASA Johnson Space Center within the context of human spaceflight.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://robinonsay.me" # the base hostname & protocol for your site
 twitter_username: robinonsay
